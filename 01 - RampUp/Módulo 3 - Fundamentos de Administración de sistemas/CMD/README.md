@@ -22,6 +22,7 @@ Dentro de la terminal, nos aparecerá un cursor, la ruta donde nos encontramos y
 	- color 0f -> ** Volvemos al color original **
 	- color 2e
 	- color 3e.. 
+	
 	La primera letra hace referencia al color de fondo y la segunda al color de la letra. 
 	
 	[Más información](https://www.pantallazos.es/2018/07/windows-cmd-colores-texto-fondo-personalizados-color.html)

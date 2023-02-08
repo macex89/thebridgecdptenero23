@@ -1,6 +1,9 @@
 # CMD
 ***
 
+*[Índice](#índice)
+
+
 Windows Terminal 
 
 **CMD (abreviatura de CoMmanD)** es un programa (cmd.exe) de **Microsoft Windows** equivalente al programa

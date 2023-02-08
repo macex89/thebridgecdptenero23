@@ -2,7 +2,7 @@
 ***
 
 ## Índice
-*(Uso básico del S.O. Windows CMD.)[#Uso básico del S.O. Windows CMD.]
+*[Uso básico del S.O. Windows CMD.](#Uso básico del S.O. Windows CMD.)
 
 Windows Terminal 
 

@@ -2,7 +2,7 @@
 ***
 
 ## Índice
-*[Uso básico del S.O. Windows CMD.](#Uso básico del S.O. Windows CMD.)
+*[Uso básico del S.O. Windows CMD.](#id1)
 
 Windows Terminal 
 
@@ -18,7 +18,7 @@ Hay varias formas de abrir el terminal:
 
 Dentro de la terminal, nos aparecerá un cursor, la ruta donde nos encontramos y un símbolo >. 
 
-## Uso básico del S.O. Windows CMD.
+## Uso básico del S.O. Windows CMD.<a name="id1"></a>
 ***
 
 * CMD no distingue entre minúsculas y mayúsculas. 

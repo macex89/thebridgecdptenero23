@@ -95,7 +95,7 @@ Este es un ejemplo de fichero creado con copy con es una inmensa y ya para remat
     ```cmd
     dir "G:\Mi unidad\Bootcams" >> lists.txt
     o
-    dir "C:\Program Files\Users" > C:\lists.txt
+    dir "C:\Program Files\Users" >> C:\lists.txt
     ```
 * **Carácter |**: Es el carácter de canalización. 
   * Toma la salida (normalmente STDOUT) de un comando y lo redirige como la entrada del siguiente  (por defecto STDIN)
@@ -177,13 +177,18 @@ Hay dos tipos de variables que se pueden pasar en los archivos por lotes.
 * Variables definidas a través del comando **SET**. Sirve para asignar un nombre de variable a un valor. Para acceder hay que colocar la variable %
   * Ej:
   ````cmd
-    SET valor = Esto es un ejemplo
-    SET /A valor 3
-    echo %valor%
-  
-  @echo off  
-  SET /A a = 5  
-  SET /A b = 10
+  @echo off
+  :comment "Ejemplo para mostrar un valor de tipo string."
+  SET valor=Esto es un ejemplo
+  echo %valor%
+
+  :comment "Ejemplo para mostrar un valor de tipo int reulizando la variable."
+  SET /A valor=3
+  echo %valor%
+
+  :comment "Ejemplo suma de variables."
+  SET /A a=5  
+  SET /A b=10
   SET /A c = %a% + %b%
   echo %c%
   ````
@@ -193,7 +198,7 @@ Hay dos tipos de variables que se pueden pasar en los archivos por lotes.
 ### Comentarios en ficheros batch
 ***
 
-* ** Para añadir comentarios se realiza de la siguiente forma**
+* **Para añadir comentarios se realiza de la siguiente forma**
   * **REM** "Comentario"
   * **::** "Comentario"
   * Si se quiere mostrar después de un comando *comando & REM "Comentario"*
@@ -225,18 +230,10 @@ if [%b%]==[] echo “Cadena B vacia"
 * Crear una cadena como mezcla de otras cadenas, permite textos y números:
 ````cmd
 @echo off  
-SET a=Hello  
-SET b=World  
-SET /A d=50
-SET c=%a% and %b% %d%  echo %c%
-````
-
-* Concatenar cadenas, solo permite textos: 
-````cmd
-@echo off
 SET a=Hello
 SET b=World
-SET c=%a% and %b%
+SET /A d=50
+SET c=%a% and %b% %d% 
 echo %c%
 ````
 
@@ -313,13 +310,13 @@ echo %str%
 
 ### Arrays
 *** 
-Los arrayso matrices no se definen específicamente como un tipo en BatchScript, pero se pueden implementar. Es necesario tener en cuenta lo siguiente cuando se implementan arreglos en BatchScript.
+Los array son matrices no se definen específicamente como un tipo en BatchScript, pero se pueden implementar. Es necesario tener en cuenta lo siguiente cuando se implementan arrays en BatchScript.
 * Cada elemento de la matriz debe definirse con el comando set
 * Se requeriría el ciclo 'for' para iterar a través de los valores de la matriz
 
 Se pueden crear matrices usando el siguiente comando:
 
-* **set a[0]=1**: Donde el índice de la matriz y 1 es el valor asignado al primer elemento de la matriz. 
+* **set a[0]=1**: Donde el índice de la matriz 0 y 1 es el valor asignado al primer elemento de la matriz. 
 
 * Acceder al valor de dicho array
 ````cmd
@@ -334,7 +331,7 @@ echo %a[0]%
 set a[0]=1
 set a[1]=2
 set a[2]=3
-rem Añadirun elementoal final del array
+rem Añadir un elemento al final del array
 set a[3]=4
 echo El ultimo elemento del array es %a[3]%
 ````

@@ -384,7 +384,7 @@ El buble for permite una serie de parámetros que cambian su funcionamiento.
   * Los rangos van a tener esta sintaxis (inicio, paso, final)
 ````cmd
 @echo off
-set localenabledelayedexpansion
+setlocal enabledelayedexpansion
 set topic[0]=comments
 set topic[1]=variables
 set topic[2]=Arrays

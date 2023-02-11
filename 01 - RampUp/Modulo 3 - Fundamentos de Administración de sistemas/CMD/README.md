@@ -420,12 +420,12 @@ Las palabras clave pueden ser:
 * **eol=c**: Especifica un carácter de fin de línea (sólo un carácter).
 * **skip=n**: Especifica el número de líneas que se omitirán al principio del archivo.
 * **delims=xxx**: xxxEspecifica un grupo de delimitadores. Reemplaza el grupo de delimitadores predeterminado, formado por los caracteres espacio y tabulador.
-* **token=x,y,m-n**: Especifica los testigos de cada línea que se pasarán al cuerpo de foren cada iteración. Como consecuencia, se asignarán nombres de variable adicionales. La forma m-n es un intervalo que especifica los testigos m hasta n. Si el último carácter de la cadena tokens= es un asterisco (*), se asigna una variable adicional que contendrá el texto que queda en la línea después del último testigo analizado.
+* **token=x,y,m-n**: Especifica los testigos de cada línea que se pasarán al cuerpo de for en cada iteración. Como consecuencia, se asignarán nombres de variable adicionales. La forma m-n es un intervalo que especifica los testigos m hasta n. Si el último carácter de la cadena tokens= es un asterisco (*), se asigna una variable adicional que contendrá el texto que queda en la línea después del último testigo analizado.
 * **usebackq**: Especifica que se pueden utilizar comillas para incluir los nombres de los archivos de grupoNombreArchivos, que una cadena incluida entre comillas se ejecutará como si fuera un comando y que una cadena escrita entre comillas simples es un comando de cadena literal.
 
 Ejemplos:
 
-* **for/f %i in (pr.abcpr1.txt) do (echo %i)**
+* **for /f %i in (pr.abcpr1.txt) do (echo %i)**
   * Leerá todos los ficheros enumerados en la cláusula 'in' del directorio en curso y el contenido de ellos, línea por línea lo pasará dentro de la variable i al do de ejecución.
   * Con la partícula **in** no podemos usar caracteres comodín.
 * **for/f "skip=1" %i in (pr.abc) do (echo %i)**
@@ -438,7 +438,7 @@ Ejemplos:
   * Muestra los tokens (palabras) primera, tercera y quinta de cada linea de  fichero.txt. En el For solo definimos %%a, y automáticamente se crean las  variables %%b y %%c
   
 * ````cmd
-  for/f "tokens=*" %%a in (fichero.txt) do (
+  for /f "tokens=*" %%a in (fichero.txt) do (
     echo %%a
     )
   ````
@@ -500,7 +500,7 @@ echo Division: %division%
 ````cmd
 @echo off
 SET /A a= 5
-SET /A b = 10
+SET /A b= 10
 if %a% EQU %b% echo A is equal to than B
 if %a% NEQ %b% echo A is not equal to than B
 if %a% LSS %b% echo A is less than B
@@ -514,7 +514,7 @@ if %a% GEQ %b% echo A is greater than or equal to B
 ````cmd
 @echo off
 SET /A a= 5
-SET /A b = 10
+SET /A b= 10
 IF %a% GEQ 10 (
     IF %b% LEQ 0 (
         ECHO %a% is NOT less than 10 OR %b% is NOT greater than 0
@@ -583,8 +583,8 @@ Uno de los usos comunes de la declaración 'if' en BatchScript es para verificar
 ````cmd
 @echo off
 SET /A a= 5
-SET /A b = 10
-SET /A c = %a% + %b%
+SET /A b= 10
+SET /A c= %a% + %b%
 if %c%==15 echo "The value of variable c is 15"
 if %c%==10 echo "The value of variable c is 10"
 ````
@@ -645,7 +645,11 @@ Cuando las posibilidades son más de dos, es necesario anidar instrucciones IF, 
 @echo off
 SET /A a= 5
 SET /A b = 10
-if %a%==5 if %b%==10 echo "The value of the variables are correct“
+if %a%==5 (
+  if %b%==10 (
+    echo "The value of the variables are correct“
+   )
+)
 ````
 
 De todos modos, algunas de las estructuras anidadas se pueden escribir con operadores AND.
@@ -706,7 +710,7 @@ EXIT /B 0
 Las funciones pueden llegar **parámetros** a la vez que se llama a la función.
 Los parámetros serán entendidos según el orden en el que se instroduzca en la llamada. 
 
-    call:nombre_funcionparametro1, parametro2, …. parametroN
+    call:nombre_funcion parametro1, parametro2, …. parametroN
 
 En la función se podrá acceder a ellos como %~1, %~2
 

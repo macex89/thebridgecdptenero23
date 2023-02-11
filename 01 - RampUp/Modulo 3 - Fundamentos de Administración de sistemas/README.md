@@ -10,6 +10,8 @@ La lista de comandos más usados la podremos encontrar aquí: [Comandos más usa
 
 ## PowerShell
 
+Aquí podéis encontrar la documentación oficial de PowerShell: [Documentación Oficial](https://learn.microsoft.com/es-es/powershell/scripting/learn/ps101/01-getting-started?view=powershell-5.1)
+
 La documentación de este módulo la veremos con un fichero [README]()
 
 La lista de comandos más usados la podremos encontrar aquí: [Comandos más usados](https://docs.google.com/document/d/1NrQLNKoPtxWExyVrJT_hi3Z9iuAYnh-o-W-bw_nwKXA/edit?usp=share_link)

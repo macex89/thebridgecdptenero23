@@ -118,17 +118,17 @@ $ageList = @{
   Kevin = 36
   Alex = 9
 }
+```
 
+* Selección múltiple
+```powershell
 # Ejemplo 
 $environments = @{
   Prod='SrvProd05' 
   QA='SrvQA02'
   Dev='SrvDev12'
 }
-```
 
-* Selección múltiple
-```powershell
 $environments[@('QA','DEV')]
 $environments[('QA','DEV')]
 $environments['QA','DEV’]
@@ -145,12 +145,15 @@ $ageList.keys
 
 * Iterar una tabla hash:
 ```powershell
+# En este ejemplo vemos que 
 $ageList.keys | ForEach-Object{
-    $message = '{0} is {1} years old!' -f $_, $ageList[$_]  Write-Output $message
+    $message = '{0} is {1} years old!' -f $_, $ageList[$_]  
+    Write-Output $message
 }
 
 foreach($key in $ageList.keys){
-    $message = '{0} is {1} years old' -f $key, $ageList[$key]  Write-Output $message
+    $message = '{0} is {1} years old' -f $key, $ageList[$key]  
+    Write-Output $message
 }
 ```
 

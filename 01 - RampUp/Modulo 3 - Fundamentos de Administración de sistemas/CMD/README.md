@@ -176,7 +176,7 @@ Hay dos tipos de variables que se pueden pasar en los archivos por lotes.
     * Podríamos lanzar una llamada así: **test.bat variable1 variable2 variable3**
 * Variables definidas a través del comando **SET**. Sirve para asignar un nombre de variable a un valor. Para acceder hay que colocar la variable %
   * Ej:
-  ````cmd
+````cmd
   @echo off
   :comment "Ejemplo para mostrar un valor de tipo string."
   SET valor=Esto es un ejemplo
@@ -194,6 +194,10 @@ Hay dos tipos de variables que se pueden pasar en los archivos por lotes.
   ````
   * Las variables set son marcadas globales. Si queremos que una variables solo sea local al script donde se define, debemos definirla dentro de **SETLOCAL ... ENDLOCAL**
   * También se puede crear variables de entorno **SET VAR_ENTORNO=valor**
+  * También se puede pedir una variable como parámetro de entrada:
+````cmd
+set /p tabladel="Dime el valor que quieras de entrada. : "
+````
 
 ### Comentarios en ficheros batch
 ***

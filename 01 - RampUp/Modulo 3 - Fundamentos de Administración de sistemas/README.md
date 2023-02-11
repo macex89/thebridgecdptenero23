@@ -4,7 +4,7 @@ El contenido será el siguiente:
 
 ## CMD
 
-La documentación de este módulo la veremos con un fichero [README](https://github.com/isotomor/thebridgecdptenero23/blob/main/01%20-%20RampUp/M%C3%B3dulo%203%20-%20Fundamentos%20de%20Administraci%C3%B3n%20de%20sistemas/CMD/README.md)
+La documentación de este módulo la veremos con un fichero [README](https://github.com/isotomor/thebridgecdptenero23/tree/main/01%20-%20RampUp/Modulo%203%20-%20Fundamentos%20de%20Administraci%C3%B3n%20de%20sistemas/CMD)
 
 La lista de comandos más usados la podremos encontrar aquí: [Comandos más usados](https://docs.google.com/document/d/1i-Oe9JPwh-BpX7AJ5f6meB0WcXSrYMlb5NTFGgIG1Uw/edit?usp=share_link)
 

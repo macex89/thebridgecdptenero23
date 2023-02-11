@@ -368,7 +368,12 @@ Pero lo más importante tiene que ver con los ficheros. Grupos válidos serían:
 
 Ejemplo: 
 ````cmd
-for%%f in (c:\windows\*.*) do @echo %%f
+:: Para ejecutar dentro de un fichero .bat
+for %%f in (c:\windows\*.*) do @echo %%f
+
+:: Para ejecutar con la línea de comandos. 
+for %%f in (c:\windows\*.*) do @echo %%f
+
 :: Nos mostrará los archivos que estánd entro de la carpeta c:\windows 
 :: (similar a un "dir" pero solo nos mostrará el nombre. 
 ````
@@ -376,10 +381,10 @@ for%%f in (c:\windows\*.*) do @echo %%f
 El buble for permite una serie de parámetros que cambian su funcionamiento.
 
 * /l permite iterar entre rangos
-  * Los rangos vana tener esta sintaxis (inicio, paso, final)
+  * Los rangos van a tener esta sintaxis (inicio, paso, final)
 ````cmd
 @echo off
-setlocalenabledelayedexpansion
+set localenabledelayedexpansion
 set topic[0]=comments
 set topic[1]=variables
 set topic[2]=Arrays

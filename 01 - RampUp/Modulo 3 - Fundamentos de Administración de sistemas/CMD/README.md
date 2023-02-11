@@ -213,7 +213,7 @@ Los ficheros por lotes pueden crear, editar, eliminar cadenas, pero además tien
 ````cmd
   @echo off
   :: This program just displays Hello World  
-  set message = Hello World
+  set message=Hello World
   echo %message%
 ````
 

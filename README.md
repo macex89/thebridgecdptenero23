@@ -1,12 +1,14 @@
 # The Bridge
 
+![The Bridge](./img/TheBridge_logo.png)
+
 ## Cloud & Devops Part-Time Enero 2021
 
 Repositorio donde estará subido todo el material empleado en el bootcamp de Data Science de Enero 2021 en The Bridge. 
 
 
 
-El bootcamp se divide en los siguientes módulos:
+El bootcamp se divide en los siguientes módulos:k
 
 * RampUp
     - Modulo 1 – Fundamentos de Hardware y Sistemas Operativos
@@ -14,7 +16,7 @@ El bootcamp se divide en los siguientes módulos:
     - Modulo 3 – Fundamentos de Administración de sistemas
 * Despliegue de servicios en cloud
     - Módulo 1 - Concepto de la nube
-    - Módulo 2 - Seguridad y Conformidad
+    - Módulo 2 - Seguridad y Conformidadk
     - Módulo 3: Infraestructura y servicios principales
     - Módulo 4: Facturación y precios
 * Arquitectura Cloud avanzadas

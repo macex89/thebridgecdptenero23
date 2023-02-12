@@ -1,253 +1,36 @@
-﻿**Ramp-up: Módulo 3![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.001.png)**
+﻿# Bash 
+***
 
-**Administración de SS.OO**
+![](../../../img/TheBridge_logo.png)
 
-![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.002.png)
+## Linux Terminal
+***
 
-## objetivos Administración de Sistemas Operativos![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.003.png)
-- Linux terminal
-## Ubuntu (Debian) CentOS (Red Hat)
-## Administración de Sistemas Operativos![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.003.png)
-- Linux terminal
-## 03 Ubuntu (Debian)
-## CentOS (Red Hat)
-
-3![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.004.png)
-3. Linux CentOS ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
-
-Linux Terminal
-
-Instalación de CentOS 7/8 en MV
-
-Instalación de CentOS 7
-
-- Instalación del entorno virtualizador y creación de la VM
-  - Primero instalaremos el entorno virtualizador (VMWare o Virtual Box)
-  - Tras esto comenzaremos creando una nueva máquina:
-
-![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.006.png) 5![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.007.png)
-
-
-3. Linux CentOS ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
-
-Linux Terminal
-
-Instalación de CentOS 7
-
-- Instalación del entorno virtualizador y creación de la VM
-  - Elegimos crear la máquina para luego instalar el SO y pulsamos next
-
-![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.008.png) 6![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.009.png)
-
-Instalación de CentOS 7
-
-- Instalación del entorno virtualizador y creación de la VM
-  - Elegimos Linux en el Guest Operating System y Centos 7 64 bits.
-
-![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.010.png) 7
-
-3. Linux CentOS ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
-
-Linux Terminal
-
-Instalación de CentOS 7
-
-- Instalación del entorno virtualizador y creación de la VM
-  - Le damos un nombre y buscamos una ubicación para la VM:
-
-Instalación de CentOS 7
-
-- Instalación del entorno virtualizador y creación de la VM
-  - Ponemos un máximo de 60 a 100 Gigas y múltiples archivos:
-
-Instalación de CentOS 7
-
-- Instalación del entorno virtualizador y creación de la VM
-  - Personalizamos el hardware y aparece esta ventana:
-
-Instalación de CentOS 7
-
-- Instalación del entorno virtualizador y creación de la VM
-  - Ahora dependiendo de qué maquina tengamos:
-    - Si tiene 8 Gigas de RAM:
-      - 4 Gigas de Memoria
-      - 2 CPU
-    - Si tiene 16 Gigas de RAM
-      - 10 Gigas de Memoria
-      - 2 – 4 CPU (Dependiendo de los núcleos)
-
-Instalación de CentOS 7
-
-- Instalación del entorno virtualizador y creación de la VM
-  - En la parte de CD-DVD, debemos escoger imagen ISO, para que ahora cuando queramos instalar el sistema operativo parta de ahí.
-    - Pulsamos Browse… y buscamos el iso de nuestro sistema operativo Centos.
-
-![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.011.png)
-
-Instalación de CentOS 7
-
-- Instalación del entorno virtualizador y creación de la VM
-  - Seleccionamos y pulsamos Abrir, y ya está todo por ahora
-
-15![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.012.png)
-3. Linux CentOS ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
-
-Linux Terminal
-
-Instalación de CentOS 7
-
-- Instalación del entorno virtualizador y creación de la VM
-  - Pulsamos Finish
-
-![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.013.png) 14
-
-
-3. Linux CentOS ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
-
-Linux Terminal
-
-Instalación de CentOS 7
-
-- Instalación del entorno virtualizador y creación de la VM
-  - Y ya nos aparece la máquina virtual creada
-
-![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.014.png) 15
-
-3. Linux CentOS ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
-
-Linux Terminal
-
-Instalación de CentOS 7
-
-- Instalación del sistema operativo
-  - Como ya le hemos dicho que cargue en su “supuesto” dvd-rom el sistema operativo, sólo hay que comenzar con Play Virtual Machine
-
-Instalación de CentOS 7
-
-- Instalación del sistema operativo
-  - Comienza el proceso.
-
-Instalación de CentOS 7
-
-- Instalación del sistema operativo
-  - Tras comprobar que la imagen es correcta, comienza el installer:
-
-Instalación de CentOS 7
-
-- Instalación del sistema operativo
-  - Tras unos instantes negros, aparece la luz: Elegimos Español
-
-Instalación de CentOS 7
-
-- Instalación del sistema operativo
-  - Ahora nos aparece esta pantalla:
-
-Instalación de CentOS 7
-
-- Instalación del sistema operativo
-  - En ella hay que tener especial cuidado con:
-    - La fecha y la hora suele estar adelantada 1 hora
-    - Al principio aparecen triángulos naranjas que avisan de que hace falta cambiar elementos.
-    - Básicamente sólo hay dos temas a cambiar:
-      - Selección de Software:
-        - Por defecto instala la mínima, pero esta no nos sirve.
-        - Hay que pinchar en ese icono, y seleccionar una de las dos últimas opciones de la izquierda:
-- Gnome (un entorno que se parece a Windows)
-- KDE (un entorno que se parece a iOS)
-
-25![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.015.png)
-3. Linux CentOS ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
-
-Linux Terminal
-
-Instalación de CentOS 7
-
-- Instalación del sistema operativo
-  - Podemos elegir Gnome o KDE
-
-![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.016.png) 22![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.017.png)
-
-
-3. Linux CentOS ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
-
-Linux Terminal
-
-Instalación de CentOS 7
-
-- Instalación del sistema operativo
-  - También falta ir a Redes. Esta opción no se ve inicialmente en la pantalla, sino que hay que pulsar en la barra de la derecha para bajar que se vean más opciones.
-    - En esta pantalla sólo hay que encender la red, con un botón que está en la parte superior derecha.
-    - Cuando ya lo tengamos, pulsamos listo. 
-  - Al salir ya podemos darle a instalar. Y mientras tanto vamos a añadir la contraseña para el Root y crear un usuario. Si no hacemos las dos cosas, no podremos trabajar con la MV.
-
-Instalación de CentOS 7
-
-- Instalación del sistema operativo
-  - Nos pide añadir una contraseña de root y un usuario.
-
-Instalación de CentOS 7
-
-- Instalación del sistema operativo
-  - El crea el nombre del usuario automaticamente.
-
-Instalación de CentOS 7
-
-- Instalación del sistema operativo
-  - Y ahora a esperar…
-
-Instalación de CentOS 7
-
-- Instalación del sistema operativo
-  - …. Hasta que diga que lo ha instalado y que hay que reiniciar.
-
-32
-3. Linux CentOS ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
-
-Linux Terminal
-
-Instalación de CentOS 7
-
-- Instalación del sistema operativo
-  - Cuando haya reiniciado, y tras la configuración de la red: En ese punto basta con pinchar en Configuración y decirle que se conecte automáticamente cuando sea posible. Nos aparece el login:
-
-![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.018.png) 28
-
-
-3. Linux ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
-
-Eso del código abierto
-
-35
-3. Linux ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
-
-Linux Terminal
-
-Eso del código abierto
+### Eso del código abierto
 
 - El termino **Open source** se refiere a un tipo de software abierto a todo publico, donde el código puede ser usado, modificado, analizado y re distribuido por cualquier persona. 
+
+
 - Como el código de este tipo de Software es abierto a todo publico, es necesario definir qué se puede y qué no se puede hace con él. Y es allí donde salen a relucir las licencias Open Source.
 
-Eso del código abierto
 
 - Podemos definir una **licencia open source** como un tipo de licencias asociada a un Software. Esta licencia define como el software podrá ser utilizado, distribuido, analizado, e inclusive, modificado.
-- A través de las licencias open source que seremos capaces de establecer reglas de lo que se puede o no hacer con nuestro proyecto.
-- Existen una gran cantidad de licencias en el mercado, pero hay cuatro especialmente relevantes:
 
-Eso del código abierto
+
+- A través de las licencias open source que seremos capaces de establecer reglas de lo que se puede o no hacer con nuestro proyecto.
+
+
+- Existen una gran cantidad de licencias en el mercado, pero hay cuatro especialmente relevantes:
 
 - **GNU General Public License (GPL)**
   - Esta licencia permite ejecutar el programa, estudiarlo y distribuirlo, ya sea mediante una copia exacta del programa o en versiones modificadas.
   - Algo importante a mencionar es que, esta es una licencia copyleft, lo que significa que, además de ofrecer el derecho de poder hacer lo que deseemos con el software, cualquier trabajo derivado, obligatoriamente, debe distribuirse bajo la misma licencia.
-  - Más información: <https://www.gnu.org/philosophy/philosophy.html>
-
-Eso del código abierto
+  - Más información: [https://www.gnu.org/philosophy/philosophy.html](https://www.gnu.org/philosophy/philosophy.html)
 
 - **APACHE LICENSE 2.0**
   - Esta es una licencia **muy permisiva** con el software. En su versión 2.0 la licencia Apache obliga a mantener todos los derechos de autor y patentes asociadas al software. Así mismo permite que el software pueda ser ejecutado, modificado y redistribuido.
   - Y en caso el código sea modificado, se debe mencionar cada una de las modificaciones realizadas. Si existen partes de código sin modificar, estas deben conservar la licencia Apache 2.0
-  - Más información: <https://www.apache.org/licenses/LICENSE-2.0>
-
-Eso del código abierto
+  - Más información: [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 - **MIT License**
   - Esta es la licencia **más permisiva** de las cuatro, ya que prácticamente permite hacer lo que nosotros deseemos con el software. Ya sea ejecutarlo, estudiarlo, modificarlo, redistribuido, e inclusive**, sub-licenciar.**
@@ -256,9 +39,7 @@ Eso del código abierto
     - El autor original se deslinda de cualquier daño o mal uso resultado del código licenciado.
     - En las copias generadas se debe mantener la licencia MIT.
   - Algunos softwares famosos que utilizan esta licencia pueden ser **Node.JS, Vue.JS o Ruby On Rails, etc**
-  - Más información: <https://opensource.org/licenses/MIT>
-
-Eso del código abierto
+  - Más información: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
 
 - **MOZILLA PUBLIC LICENSE (MPL)**
   - The Mozilla Public License (MPL) es una licencia desarrollada y mantenida por la fundación Mozilla.
@@ -266,113 +47,76 @@ Eso del código abierto
   - Los puntos a descartar son los siguiente.
     - Se mantienen los derechos de autor.
     - Si el código es modificado, el código original con licencia MPL debe estar disponible, y se debe informar dónde y cómo se puede obtener.
-  - Más información: <https://www.mozilla.org/en-US/MPL/>
+  - Más información: [https://www.mozilla.org/en-US/MPL/](https://www.mozilla.org/en-US/MPL/)
 
-41
-3. Linux ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
+### Distribuciones de Linux
 
-Distribuciones de Linux
+- Linux ya no es un único S.O, existen cientos de variantes (a 2022 más de 600), tantas que ahora vamos a hablar de algunas de ellas organizándolas a través de una serie de factores:
+  - Si se busca estabilidad
+  - Si se empieza en este mundillo de Linux.
+  - Si se busca privacidad
+  - Si se dispone de equipos poco potentes
+  - Si se quiere un OS especializado para aficiones varias
+- Un lugar donde hallar todas las distribuciones:
+  - [https://distrowatch.com/](https://distrowatch.com/)
 
-42
-3. Linux ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
+#### Si se busca estabilidad:
 
-Linux Terminal
+  - **Red Hat Enterprise Linux**: Distribución comercial de Linux desarrollada por Red Hat. Ofrece una estabilidad y flexibilidad punteras, lo que la coloca como una de las más recomendadas para empresas y servidores.
+  - **Debian**: Muy estable y 100% libre, Debian destaca por su sistema de paquetería .deb y su gestión de paquetes APT. Es una de las distribuciones más importantes de GNU/Linux, ya que en ella se basan gigantes como Ubuntu.
+  - **openSUSE**: Es una de las alternativas más potente contra la familia de distribuciones basadas en Debian. Está disponible con los entornos de escritorio KDE y Gnome, y cuenta como una de sus mejores armas con la robusta herramienta de instalación y configuración YaST y el configurador gráfico SaX.
+  - **Fedora**: Distribución gratuita creada y mantenida por la empresa Red Hat que utiliza el sistema de paquetería RPM (Red Hat Package Manager). Tiene tres versiones diferentes para escritorio, servidores y sistemas en la nube, y destaca por su seguridad gracias al sistema SELinux ("Security- Enhanced Linux").
+  - **AlmaLinux:** El antiguo CentOS Linux es historia, y AlmaLinux es uno de los sucesores de la comunidad. Está entre nosotros con la mayoría de los paquetes de RHEL.
+  - **Arch Linux:** Una distribución modular en la que empiezas desde cero y tienes que ir añadiéndole los componentes que quieras. No es muy apta para principiante, y utiliza pacman, su propio gestor de paquetes. Se trata de una Rolling Release, lo que quiere decir que todos sus componentes van actualizándose sin necesidad de instalar versiones nuevas del sistema operativo.
+  - **Manjaro:** Una prometedora distribución que promete llevar todo el potencial de Arch Linux al usuario menos experimentado. Para eso, ofrece un sistema operativo ya montado y basado en Arch, con un instalador sencillo como el que podemos encontrar en otras distribuciones como Ubuntu. Tiene versiones oficiales con los entornos de escritorio XFCE y KDE. 
+  
+#### Si se empieza en esto:
+  - **Ubuntu**: Una de las distribuciones más utilizadas gracias a su gran facilidad de uso. Basada en Debian, es amada y odiada por partes iguales por su exclusivo entorno de escritorio Unity, con el que persigue convertirse en una distribución versátil que pueda utilizarse tanto en ordenadores como móviles y tabletas.
+  - **Linux Mint**: Basado en Ubuntu, es uno de los más recomendados para todos aquellos que tocan Linux por primera vez. Su entorno de escritorio, Cinnamon, tiene muchas similitudes con el de Windows, y es también uno de los más personalizables.
+  - **Elementary OS:** De todas las distribuciones basadas en Ubuntu, esta una de las que más personalidad tiene gracias a su cuidadísimo aspecto, que imita el del sistema operativo OS X de Apple. Increíblemente rápida y fácil de usar, le ofrece al usuario todo lo que pueda necesitar desde el primer momento, incluyendo una colección de aplicaciones propias diseñadas para integrarse a la perfección con su estilo visual.
+  - **Zorin OS**: Distribución también basada en Ubuntu que nació con la intención de ayudar a que el usuario diera el salto a Linux ofreciéndole una interfaz lo más similar posible a Windows. Tiene varias versiones, algunas gratuitas como Core (versión básica), Lite (para PCs poco potentes) y Educational (incluye aplicaciones educativas), y otras cuantas de pago muy al estilo de las versiones de Windows.
+  - **Peppermint OS**: Distribución rápida y ligera basada en Ubuntu con entorno de escritorio LXDE. Utiliza la tecnología Prism de Mozilla para integrarse con las aplicaciones basadas en la nube, utilizando las webapps como si fueran nativas. Se presenta como una alternativa a otros sistemas basados en la nube como Chrome OS.
 
-Distribuciones de Linux
+#### Si se busca privacidad:
+  - **Tails**: Promocionada por el propio Edward Snowden y basada en Debian, es una distribución lista para ser ejecutada desde un USB o DVD. Tails se conecta a TOR tan pronto termina el proceso de inicio del sistema operativo, y toda conexión a Internet se realiza a través de esta red.
+  - **Kali Linux**: Distribución basada en Debian con una inmensa colección de herramientas para proteger nuestros equipos. Utiliza un kernel personalizado con parches de seguridad y tiene soporte para la arquitectura ARM. Es el más utilizado para hacer Labs de Seguridad
+  - **BlackArch Linux**: Una distribución orientada a la seguridad informática que en un principio nació como expansión de Arch Linux, pero que ha seguido su propio camino. Nos da acceso a una impresionante cantidad de herramientas de hacking entre las que destaca Sploitctl, un script que permite instalar, actualizar y buscar sploits.
+  - **Arch Assault**: Se trata de una nueva distribución, también basada en Arch Linux y muy parecida a la anterior, también dirigida a hackers y amantes de la seguridad. Minimalista, con gestor de ventanas Openbox acompañado por el panel Tint2, a pesar de estar aun verde ya ofrece soporte para arquitecturas ARM.
+  
+#### Si se tienen equipos poco potentes:
+  - **Puppy Linux**: Una minúscula distribución que puede llevarse en un USB o CD, pero sorprendentemente rápida al cargarse enteramente en la memoria RAM del ordenador. Se carga en 30 o 40 segundos y ocupa sólo 100 MB.
+  - **Lubuntu:** Se trata de una versión de Ubuntu mucho más ligera y asequible para equipos poco potentes al utilizar el sistema de escritorio LXDE y el gestor de ventanas Openbox. También incluye software personalizado bastante más ligero, por lo que sólo nos pide 128MB de RAM y un Pentium II o Celeron de 1999 para funciona.
+  - **Damn Small Linux**: Distribución especialmente diseñada para los equipos más antiguos, como los Pentium de primera generación o incluso los i486. Como entorno gráfico y gestor de ventanas nos propone JWM, su iso ocupa apenas 50 MB y sólo nos pide como mínimo un Intel 486DX y 16 MB de memoria RAM.
+  
+#### Si se tienen equipos poco potentes:
+- **SliTaz**: Otro peso pluma aunque con un software ligeramente más moderno que el del anterior. Utiliza el entorno Openbox y sólo necesita un Pentium III con 256MB de RAM y 100 MB libres en el disco duro para funcionar.
+  - **LXLE**: Basada en Lubuntu, esta distribución promete ser aun más ligera gracias a un mejor procesado de inicio y el entorno de escritorio LXDE. Ofrece varios perfiles que amoldarán la distro para que se parezca a Windows XP, Vista, y 7 Starter/Basic.
+  - **Bodhi Linux**: Aunque actualmente su desarrollo está paralizado después de que su creador abandonase el barco, aun podemos utilizar las últimas versiones de esta distribución para nuestros equipos antiguos. Utiliza un entorno de escritorio Enlightenment y sólo pide como mínimo un equipo con procesador de 300 MHz, 128 MB de RAM y 2,5 GB de espacio libre en el disco duro.
+  - **Q4OS**: Y si el anterior era un proyecto que llegaba a su fin, Q4OS es uno que está comenzando. Se trata de una distro basada en Debian. Su entorno de escritorio deriva de la una versión 3.x de KDE llamada Trinity DE e imita el aspecto de Windows XP. Puede usarse en equipos con Pentium de 300MHz, 128 MB de RAMy 3 GB de disco duro.
+  
+#### Si se quiere un OS especializado para aficiones varias:
+  - **Distro Astro**: Esta distribución está basada en Ubuntu 14.04 LTS y utiliza el entorno de escritorio MATE, aunque lo más importante es su completa colección de aplicaciones dirigidas a los amantes de la astronomía.
+  - **SteamOS**: Aun en fase beta, esta es la distribución basada en Debian desarrollada por Valve, y que está más dirigida a ser una especie de media center para videojuegos integrando el modo big picture que un sistema de sobremesa.
+  - **ArtistX**: Distribución de Linux enfocada en la producción multimedia. Basada en Ubuntu, aunque diseñada para ser utilizada en formato LiveDVD y USB, se puede instalar en cualquier equipo. Usa el entorno KDE y ofrece una colección de programas de código abierto para edición de vídeo y creación de gráficos 2D y 3D.
+  - **Ubuntu Studio**: Basada en Ubuntu y orientada a la edición multimedia profesional de audio, video y gráficos. Utiliza el entorno de escritorio Xfce y no lleva preinstalado ningún tipo de software ofimático, sólo el diseñado para la edición multimedia.
+  
+#### Si se quiere un OS especializado para aficiones varias:
+  - **Scientific Linux**: Se trata de un clon a nivel binario de la distribución Red Hat Enterprise Linux, y está desarrollada y mantenida por los laboratorios de Física CERN y Fermilab con el objetivo de tener un sistema operativo específico para la computación científica.
+  - **CEELD**: Distro basada en OpenSUSE que usa el entorno KDE y está especialmente dirigida a los ingenieros electrónicos y a estudiantes de esta carrera, al permitirles diseñar o simular circuitos electrónicos.
+  - **Edubuntu**: Otro derivado de Ubuntu, pero en esta ocasión especialmente dirigido a escuelas y profesores. Ofrece una gran colección de software y herramientas educativas, por lo que también es una buena opción para instalar en los ordenadores de los más jóvenes de la casa.
+  - **Openelec**: Pequeña distribución Linux creada desde cero para convertir un ordenador en un centro multimedia basado en Kodi, lo que antes se conocía como XBMC. Hace lo que promete y necesita sólo 90-125 MB de almacenamiento interno. A parte de su versión oficial, tiene otras dos buids para Raspberry Pi y Apple TV.
 
-- Distribuciones de Linux
-  - Linux ya no es un único S.O, existen cientos de variantes (a 2022 más de 600), tantas que ahora vamos a hablar de algunas de ellas organizándolas a través de una serie de factores:
-    - Si se busca estabilidad
-    - Si se empieza en este mundillo de Linux.
-    - Si se busca privacidad
-    - Si se dispone de equipos poco potentes
-    - Si se quiere un OS especializado para aficiones varias
-  - Un lugar donde hallar todas las distribuciones:
-    - <https://distrowatch.com/>
+![Evolucion de las distribuciones.png](img/Evolucion de las distribuciones.png)
 
-Distribuciones de Linux
-
-- Distribuciones de Linux
-  - Si se busca estabilidad:
-    - **Red Hat Enterprise Linux**: Distribución comercial de Linux desarrollada por Red Hat. Ofrece una estabilidad y flexibilidad punteras, lo que la coloca como una de las más recomendadas para empresas y servidores.
-    - **Debian**: Muy estable y 100% libre, Debian destaca por su sistema de paquetería .deb y su gestión de paquetes APT. Es una de las distribuciones más importantes de GNU/Linux, ya que en ella se basan gigantes como Ubuntu.
-    - **openSUSE**: Es una de las alternativas más potente contra la familia de distribuciones basadas en Debian. Está disponible con los entornos de escritorio KDE y Gnome, y cuenta como una de sus mejores armas con la robusta herramienta de instalación y configuración YaST y el configurador gráfico SaX.
-    - **Fedora**: Distribución gratuita creada y mantenida por la empresa Red Hat que utiliza el sistema de paquetería RPM (Red Hat Package Manager). Tiene tres versiones diferentes para escritorio, servidores y sistemas en la nube, y destaca por su seguridad gracias al sistema SELinux ("Security- Enhanced Linux").
-
-Distribuciones de Linux
-
-- Distribuciones de Linux
-  - Si se busca estabilidad:
-    - **AlmaLinux:** El antiguo CentOS Linux es historia, y AlmaLinux es uno de los sucesores de la comunidad. Está entre nosotros con la mayoría de los paquetes de RHEL.
-    - **Arch Linux:** Una distribución modular en la que empiezas desde cero y tienes que ir añadiéndole los componentes que quieras. No es muy apta para principiante, y utiliza pacman, su propio gestor de paquetes. Se trata de una Rolling Release, lo que quiere decir que todos sus componentes van actualizándose sin necesidad de instalar versiones nuevas del sistema operativo.
-    - **Manjaro:** Una prometedora distribución que promete llevar todo el potencial de Arch Linux al usuario menos experimentado. Para eso, ofrece un sistema operativo ya montado y basado en Arch, con un instalador sencillo como el que podemos encontrar en otras distribuciones como Ubuntu. Tiene versiones oficiales con los entornos de escritorio XFCE y KDE.
-
-Distribuciones de Linux
-
-- Distribuciones de Linux
-  - Si se empieza en esto:
-    - **Ubuntu**: Una de las distribuciones más utilizadas gracias a su gran facilidad de uso. Basada en Debian, es amada y odiada por partes iguales por su exclusivo entorno de escritorio Unity, con el que persigue convertirse en una distribución versátil que pueda utilizarse tanto en ordenadores como móviles y tabletas.
-    - **Linux Mint**: Basado en Ubuntu, es uno de los más recomendados para todos aquellos que tocan Linux por primera vez. Su entorno de escritorio, Cinnamon, tiene muchas similitudes con el de Windows, y es también uno de los más personalizables.
-    - **Elementary OS:** De todas las distribuciones basadas en Ubuntu, esta una de las que más personalidad tiene gracias a su cuidadísimo aspecto, que imita el del sistema operativo OS X de Apple. Increíblemente rápida y fácil de usar, le ofrece al usuario todo lo que pueda necesitar desde el primer momento, incluyendo una colección de aplicaciones propias diseñadas para integrarse a la perfección con su estilo visual.
-
-Distribuciones de Linux
-
-- Distribuciones de Linux
-  - Si se empieza en esto:
-    - **Zorin OS**: Distribución también basada en Ubuntu que nació con la intención de ayudar a que el usuario diera el salto a Linux ofreciéndole una interfaz lo más similar posible a Windows. Tiene varias versiones, algunas gratuitas como Core (versión básica), Lite (para PCs poco potentes) y Educational (incluye aplicaciones educativas), y otras cuantas de pago muy al estilo de las versiones de Windows.
-    - **Peppermint OS**: Distribución rápida y ligera basada en Ubuntu con entorno de escritorio LXDE. Utiliza la tecnología Prism de Mozilla para integrarse con las aplicaciones basadas en la nube, utilizando las webapps como si fueran nativas. Se presenta como una alternativa a otros sistemas basados en la nube como Chrome OS.
-
-Distribuciones de Linux
-
-- Distribuciones de Linux
-  - Si se busca privacidad:
-    - **Tails**: Promocionada por el propio Edward Snowden y basada en Debian, es una distribución lista para ser ejecutada desde un USB o DVD. Tails se conecta a TOR tan pronto termina el proceso de inicio del sistema operativo, y toda conexión a Internet se realiza a través de esta red.
-    - **Kali Linux**: Distribución basada en Debian con una inmensa colección de herramientas para proteger nuestros equipos. Utiliza un kernel personalizado con parches de seguridad y tiene soporte para la arquitectura ARM. Es el más utilizado para hacer Labs de Seguridad
-    - **BlackArch Linux**: Una distribución orientada a la seguridad informática que en un principio nació como expansión de Arch Linux, pero que ha seguido su propio camino. Nos da acceso a una impresionante cantidad de herramientas de hacking entre las que destaca Sploitctl, un script que permite instalar, actualizar y buscar sploits.
-    - **Arch Assault**: Se trata de una nueva distribución, también basada en Arch Linux y muy parecida a la anterior, también dirigida a hackers y amantes de la seguridad. Minimalista, con gestor de ventanas Openbox acompañado por el panel Tint2, a pesar de estar aun verde ya ofrece soporte para arquitecturas ARM.
-
-Distribuciones de Linux
-
-- Distribuciones de Linux
-  - Si se tienen equipos poco potentes:
-    - **Puppy Linux**: Una minúscula distribución que puede llevarse en un USB o CD, pero sorprendentemente rápida al cargarse enteramente en la memoria RAM del ordenador. Se carga en 30 o 40 segundos y ocupa sólo 100 MB.
-    - **Lubuntu:** Se trata de una versión de Ubuntu mucho más ligera y asequible para equipos poco potentes al utilizar el sistema de escritorio LXDE y el gestor de ventanas Openbox. También incluye software personalizado bastante más ligero, por lo que sólo nos pide 128MB de RAM y un Pentium II o Celeron de 1999 para funciona.
-    - **Damn Small Linux**: Distribución especialmente diseñada para los equipos más antiguos, como los Pentium de primera generación o incluso los i486. Como entorno gráfico y gestor de ventanas nos propone JWM, su iso ocupa apenas 50 MB y sólo nos pide como mínimo un Intel 486DX y 16 MB de memoria RAM.
-
-Distribuciones de Linux
-
-- Distribuciones de Linux
-  - Si se tienen equipos poco potentes:
-    - **SliTaz**: Otro peso pluma aunque con un software ligeramente más moderno que el del anterior. Utiliza el entorno Openbox y sólo necesita un Pentium III con 256MB de RAM y 100 MB libres en el disco duro para funcionar.
-    - **LXLE**: Basada en Lubuntu, esta distribución promete ser aun más ligera gracias a un mejor procesado de inicio y el entorno de escritorio LXDE. Ofrece varios perfiles que amoldarán la distro para que se parezca a Windows XP, Vista, y 7 Starter/Basic.
-    - **Bodhi Linux**: Aunque actualmente su desarrollo está paralizado después de que su creador abandonase el barco, aun podemos utilizar las últimas versiones de esta distribución para nuestros equipos antiguos. Utiliza un entorno de escritorio Enlightenment y sólo pide como mínimo un equipo con procesador de 300 MHz, 128 MB de RAM y 2,5 GB de espacio libre en el disco duro.
-    - **Q4OS**: Y si el anterior era un proyecto que llegaba a su fin, Q4OS es uno que está comenzando. Se trata de una distro basada en Debian. Su entorno de escritorio deriva de la una versión 3.x de KDE llamada Trinity DE e imita el aspecto de Windows XP. Puede usarse en equipos con Pentium de 300MHz, 128 MB de RAMy 3 GB de disco duro.
-
-Distribuciones de Linux
-
-- Distribuciones de Linux
-  - Si se quiere un OS especializado para aficiones varias:
-    - **Distro Astro**: Esta distribución está basada en Ubuntu 14.04 LTS y utiliza el entorno de escritorio MATE, aunque lo más importante es su completa colección de aplicaciones dirigidas a los amantes de la astronomía.
-    - **SteamOS**: Aun en fase beta, esta es la distribución basada en Debian desarrollada por Valve, y que está más dirigida a ser una especie de media center para videojuegos integrando el modo big picture que un sistema de sobremesa.
-    - **ArtistX**: Distribución de Linux enfocada en la producción multimedia. Basada en Ubuntu, aunque diseñada para ser utilizada en formato LiveDVD y USB, se puede instalar en cualquier equipo. Usa el entorno KDE y ofrece una colección de programas de código abierto para edición de vídeo y creación de gráficos 2D y 3D.
-    - **Ubuntu Studio**: Basada en Ubuntu y orientada a la edición multimedia profesional de audio, video y gráficos. Utiliza el entorno de escritorio Xfce y no lleva preinstalado ningún tipo de software ofimático, sólo el diseñado para la edición multimedia.
-
-Distribuciones de Linux
-
-- Distribuciones de Linux
-  - Si se quiere un OS especializado para aficiones varias:
-    - **Scientific Linux**: Se trata de un clon a nivel binario de la distribución Red Hat Enterprise Linux, y está desarrollada y mantenida por los laboratorios de Física CERN y Fermilab con el objetivo de tener un sistema operativo específico para la computación científica.
-    - **CEELD**: Distro basada en OpenSUSE que usa el entorno KDE y está especialmente dirigida a los ingenieros electrónicos y a estudiantes de esta carrera, al permitirles diseñar o simular circuitos electrónicos.
-    - **Edubuntu**: Otro derivado de Ubuntu, pero en esta ocasión especialmente dirigido a escuelas y profesores. Ofrece una gran colección de software y herramientas educativas, por lo que también es una buena opción para instalar en los ordenadores de los más jóvenes de la casa.
-    - **Openelec**: Pequeña distribución Linux creada desde cero para convertir un ordenador en un centro multimedia basado en Kodi, lo que antes se conocía como XBMC. Hace lo que promete y necesita sólo 90-125 MB de almacenamiento interno. A parte de su versión oficial, tiene otras dos buids para Raspberry Pi y Apple TV.
+img/TheBridge_logo.png
 
 53
-3. Linux ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
+3. Linux ![](img/Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
 
 Comenzando con Linux
 
 54
-3. Linux ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
+3. Linux ![](img/Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
 
 Linux Terminal
 
@@ -399,16 +143,16 @@ Comenzando con Linux
 - También podemos añadir el terminal a la barra de favoritos. Para ello, primero en el cuadro de puntos, buscaremos el terminal y con botón derecho elegiremos Añadir a Favoritos
 
 58
-3. Linux ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
+3. Linux ![](img/Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
 
 Linux Terminal
 
 Comenzando con Linux
 
-![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.019.png) 52
+![](img/Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.019.png) 52
 
 
-3. Linux ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
+3. Linux ![](img/Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
 
 Linux Terminal
 
@@ -429,7 +173,7 @@ Comenzando con Linux
 
 - En Linux podemos decir que existen unos “Niveles de ejecución” que son simplemente números que le dicen a Linux cómo debería estar funcionando el sistema operativo:
 
-![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.020.png)
+![](img/Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.020.png)
 
 - Esta lista puede cambiar entre las versiones de Linux que usemos
 
@@ -501,7 +245,7 @@ Comenzando con Linux
 Comenzando con Linux
 
 - **block**: Contiene dispositivos de bloque adjuntos como discos duros y usb.
-  - dentro de /sys/block se encuentran entre otros sda, puede que también un sdb que será como llame a nuestros discos duros. En cada sda o sdb se encuentran las particiones de la unidad. ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.021.png)
+  - dentro de /sys/block se encuentran entre otros sda, puede que también un sdb que será como llame a nuestros discos duros. En cada sda o sdb se encuentran las particiones de la unidad. ![](img/Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.021.png)
 
 Comenzando con Linux
 
@@ -592,7 +336,7 @@ Comenzando con Linux
 - **Instalaciones y paquetes**
   - Ya hemos visto cómo instalar algo con CentOS, pero esto cambia según la distribución
 
-![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.022.png)
+![](img/Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.022.png)
 
 Comenzando con Linux
 
@@ -652,12 +396,12 @@ Comenzando con Linux
     - Luego nos pedirá confirmación. Pero que también podemos colocar el flag -y para que diga a todo que SI.
 
 86
-3. Linux Ubuntu ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
+3. Linux Ubuntu ![](img/Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
 
 Servidores Linux
 
 87
-3. Linux ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
+3. Linux ![](img/Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
 
 Linux Terminal
 
@@ -670,7 +414,7 @@ Servidores Linux
 
 Servidores Linux
 
-![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.023.png)
+![](img/Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.023.png)
 
 Servidores Linux
 
@@ -810,7 +554,7 @@ Comandos Linux
     - ***Comandos Linux Completo.pdf***
 
 101
-3. Linux Ubuntu ![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
+3. Linux Ubuntu ![](img/Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
 
 Linux Terminal
 

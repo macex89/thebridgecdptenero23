@@ -1,6 +1,9 @@
 # Power Shell
 ***
 
+![](../../../img/TheBridge_logo.png)
+
+
 **PowerShell** es un programa de **administración de configuración** y **automatización de tareas** de Microsoft, que consiste en un shell de línea de comandos y el lenguaje de secuencias de comandos asociado.
 
 Inicialmente, solo era un componente de Windows, conocido como Windows PowerShell. También se le conoce como PowerShell 5. Se basa en .NET Framework y sólo se puede ejecutar en máquinas Windows.

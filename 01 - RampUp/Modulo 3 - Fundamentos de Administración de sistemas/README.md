@@ -1,5 +1,7 @@
 # Fundamentos de Administración de sistemas 
 
+![](../../img/TheBridge_logo.png)
+
 El contenido será el siguiente:
 
 ## CMD

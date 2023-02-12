@@ -1,4 +1,4 @@
-﻿Kk**Ramp-up: Módulo 3![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.001.png)**
+﻿**Ramp-up: Módulo 3![](Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.001.png)**
 
 **Administración de SS.OO**
 

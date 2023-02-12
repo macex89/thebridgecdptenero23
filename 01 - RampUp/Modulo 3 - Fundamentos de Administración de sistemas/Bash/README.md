@@ -108,8 +108,6 @@
 
 ![Evolucion de las distribuciones.png](img/Evolucion de las distribuciones.png)
 
-img/TheBridge_logo.png
-
 53
 3. Linux ![](img/Aspose.Words.6783ed45-7cca-4b2b-949d-ab0167fefe4a.005.png)
 

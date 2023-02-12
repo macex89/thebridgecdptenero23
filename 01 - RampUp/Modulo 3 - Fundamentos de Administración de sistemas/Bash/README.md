@@ -417,7 +417,7 @@ Luego nos pedirá confirmación. Pero que también podemos colocar el flag -y pa
 Repaso a los comandos Linux básicos
 
 Se acompañan una serie de documentos para repaso de los comandos básicos:
-    - ***Comandos Ubuntu Linux muy básicos.docx***
-    - ***Más comandos básicos.pdf***
-    - ***Anexo\_Comandos\_Linux.pdf***
-    - ***Comandos Linux Completo.pdf***
+- [Más comandos básicos](https://github.com/isotomor/thebridgecdptenero23/blob/main/01%20-%20RampUp/Modulo%203%20-%20Fundamentos%20de%20Administraci%C3%B3n%20de%20sistemas/Bash/Comandos%20basicos%20linux/M%C3%A1s%20comandos%20b%C3%A1sicos.pdf)
+- [Anexo Comandos Linux](https://github.com/isotomor/thebridgecdptenero23/blob/main/01%20-%20RampUp/Modulo%203%20-%20Fundamentos%20de%20Administraci%C3%B3n%20de%20sistemas/Bash/Comandos%20basicos%20linux/Anexo_Comandos_Linux.pdf)
+- [Chuleta shell script](https://github.com/isotomor/thebridgecdptenero23/raw/main/01%20-%20RampUp/Modulo%203%20-%20Fundamentos%20de%20Administraci%C3%B3n%20de%20sistemas/Bash/Comandos%20basicos%20linux/chuleta-shell-script.pdf)
+- [Comandos Linux Completo](https://github.com/isotomor/thebridgecdptenero23/raw/main/01%20-%20RampUp/Modulo%203%20-%20Fundamentos%20de%20Administraci%C3%B3n%20de%20sistemas/Bash/Comandos%20basicos%20linux/Comandos%20Linux%20Completo.pdf)

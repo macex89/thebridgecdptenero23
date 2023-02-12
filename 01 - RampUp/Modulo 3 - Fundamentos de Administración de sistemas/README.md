@@ -21,6 +21,14 @@ La lista de comandos más usados la podremos encontrar aquí: [Comandos más usa
 Libro con todo el contenido de powershell: [PowerShell Notes for professionals boos](https://drive.google.com/file/d/15X86qGSM9w-wnZkUCLmunb1ul3Q1ZarP/view?usp=share_link)
 
 
-## Bash 
+## Bash
+
+La documentación de este módulo la veremos con un fichero [README](https://github.com/isotomor/thebridgecdptenero23/tree/main/01%20-%20RampUp/Modulo%203%20-%20Fundamentos%20de%20Administraci%C3%B3n%20de%20sistemas/Bash)
+
+- [Más comandos básicos](https://github.com/isotomor/thebridgecdptenero23/blob/main/01%20-%20RampUp/Modulo%203%20-%20Fundamentos%20de%20Administraci%C3%B3n%20de%20sistemas/Bash/Comandos%20basicos%20linux/M%C3%A1s%20comandos%20b%C3%A1sicos.pdf)
+- [Anexo Comandos Linux](https://github.com/isotomor/thebridgecdptenero23/blob/main/01%20-%20RampUp/Modulo%203%20-%20Fundamentos%20de%20Administraci%C3%B3n%20de%20sistemas/Bash/Comandos%20basicos%20linux/Anexo_Comandos_Linux.pdf)
+- [Chuleta shell script](https://github.com/isotomor/thebridgecdptenero23/raw/main/01%20-%20RampUp/Modulo%203%20-%20Fundamentos%20de%20Administraci%C3%B3n%20de%20sistemas/Bash/Comandos%20basicos%20linux/chuleta-shell-script.pdf)
+- [Comandos Linux Completo](https://github.com/isotomor/thebridgecdptenero23/raw/main/01%20-%20RampUp/Modulo%203%20-%20Fundamentos%20de%20Administraci%C3%B3n%20de%20sistemas/Bash/Comandos%20basicos%20linux/Comandos%20Linux%20Completo.pdf)
+
 ## Yaml
 

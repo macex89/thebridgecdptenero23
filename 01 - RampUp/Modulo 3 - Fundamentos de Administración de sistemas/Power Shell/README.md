@@ -218,7 +218,7 @@ if ( 5 -ne $value ) {
 
 * -gt-ge-lt-le para mayor que o menor que
 ```powershell
-if ( $value -gt5 ) {
+if ( $value -gt 5 ) {
     # do something
 }
 ```
@@ -244,7 +244,7 @@ if ( $null -eq $value ) {
 
 * También se puede usar un condicional para asignar un valor a una variable:
 ```powershell
-$discount = if ( $age -ge55 ) {
+$discount = if ( $age -ge 55 ) {
     Get-SeniorDiscount
 }elseif ( $age -le 13 ){
     Get-ChildDiscount
@@ -264,14 +264,12 @@ if ( Test-Path -Path $Path -PathTypeLeaf ) {
 
 * También se pueden hacer condicionales anidadas. 
 ```powershell
-if ( Test-Path -Path $Path -PathTypeLeaf ) {
+# Hay qye definir el $Path, especificando la ruta de un fichero
+# Hay que definir $archivePath para definir la salida. 
+if ( Test-Path -Path $Path -PathType Leaf ) {
     Move-Item -Path $Path -Destination $archivePath
 } else {
-    if ( Test-Path -Path $Path ) {
-        Write-Warning "A file was required but a directory was found instead." 
-    } else {
-        Write-Warning "$path could not be found." 
-    }
+    Write-Warning "$path doesn't exist or isn't a file."
 }
 ```
 

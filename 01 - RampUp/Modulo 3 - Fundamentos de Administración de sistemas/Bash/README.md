@@ -875,7 +875,7 @@ echo "Hola" $1;
 echo "Hola" $2;
 echo "Nombre del fichero:" $0;
 echo "Numero de parametros": $#;
-echo "Todos los parametrosmenos el 0": $*;
+echo "Todos los parametros menos el 0": $*;
 ````
 
 Este ejemplo muestra cómo usar parámetros.
@@ -893,16 +893,16 @@ Para llamarlo, suponiendo que se llamase ***script.sh***: ***script.sh parametro
 
 ````bash
 #!/bin/bash
-echo "¿Quétiempoharámañana?"
+echo "¿Qué tiempo hará mañana?"
 read weather
   case $weather in
-    soleado| calido) echo "Me encantacuandoestá" $weather
+    soleado| calido) echo "Me encanta cuando está" $weather
     ;;
-    nuboso| fresco ) echo "No es para tanto..." $weather" tambiénestábien"
+    nuboso| fresco ) echo "No es para tanto..." $weather" también está bien"
     ;;
     lluvioso| frio) echo "Buff" $weather" me deprime"
     ;;
-    * ) echo "Perdona, no tehe entendido."
+    * ) echo "Perdona, no te he entendido."
     ;;
   esac
 exit 0

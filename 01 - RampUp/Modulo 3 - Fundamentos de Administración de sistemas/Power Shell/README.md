@@ -480,7 +480,7 @@ function Test-MrParameter{
 ```
 
 Para invocarla:
-* **Test-MrParameter-ComputerNameMioMachine**
+* **Test-MrParameter Nombre_computadora**
 
 Otro ejemplo:
 
@@ -498,6 +498,8 @@ function Get-MrParameterCount{
   }
 }
 ```
+Para invocarla
+- **Get-MrParameterCount Parametro1, prm2**
 
 ## cmdlets
 ***
@@ -528,7 +530,7 @@ Por ello, PowerShell incluye herramientas muy importantes para facilitar la bús
 Todos los parámetros de los cmdlets, llevan un guión delante:
 
 ```powershell
-PS> Get-Service -ComputerName Client01
+PS> Get-Service -DisplayName Microsoft*
 
 # Lanzamos el comando Get-Sertvice y nos devolverá dos opciones de parámetros
 
@@ -553,17 +555,17 @@ Write-Host("Esto es un ejemplo de echo en PowerShell")
   * Podemos escribir varios cmdlets encadenador o unirlos unos con otros:
 
 ```powershell
-get-setvice | sort 
+get-service | sort 
 # o  
-get-setvice | 
->> sort
+get-service | 
+sort
 ```
 
 La mejor manera de saber cuales son los Cmdlets que hay y poder encontrarlos es usar el Get-Help
 
 * Para ello el mejor paso es hacer un update-help
 
-Podemos busacr ejemplos de un cmdlets que nos interese:
+Podemos buscar ejemplos de un cmdlets que nos interese:
 
 ````powershell
 help get-service -examples
@@ -576,7 +578,7 @@ Podemos hacer ciertas operaciones como:
 ```powershell
 Get-command -name *IP* -module nettcpip # Configuraciones de UP
 
-Get-command-commandtypealias | measure-object # Hacer medidas
+Get-command -commandtype alias | measure-object # Hacer medidas
 ```
 
 * Podemos filtrar a través de where-object
@@ -586,10 +588,9 @@ Get-service | where-object status -eq "stopped"
 ```
 
 ```
-Get-service|
-where-object status -eq "stopped“ |
-select-objectName, MachineName, Status |
-Sort-object-PropertyMachineName
+Get-service| where-object status -eq "stopped“ |
+select-object Name, MachineName, Status |
+Sort-object -Property MachineName
 ```
 
 ### Documentación
@@ -601,34 +602,34 @@ Para ello tenemos una herramienta que se llama Get-history, que nos permite cono
 El resultado de un Get-historyno tiene por qué ir a pantalla, podemos desviarlo a un fichero:
 
 ````powershell
-get-history| out-file .\directorio\historial.txt
+get-history | out-file historial.txt
 ````
 
 Y abrirlo directamente desde Powershell:
 ````powershell
-notepad.\directorio\historial.txt
+notepad historial.txt
 ````
 
 Hay una ID al lado de cada comando, y podemos volver a lanzar el comando, por ejemplo:
 ```powershell
-invoke-history-id 8
+Invoke-History -Id 123 # Buscar un ID y actualizarlo. 
 ```
 
-A continuación avmos a ver una serie de pasos para hacer una transcripción, no de toda la sesión sino de una parte. 
+A continuación vamos a ver una serie de pasos para hacer una transcripción, no de toda la sesión sino de una parte. 
 ```powershell
 # 1. Creamos una carpeta llamada Transcripciones:
-mdc:\scripts\transcripciones
+md transcripciones
 
 # 2. Ahora podemos limpiar todas las transcripciones anteriores:
 Clear-History
 
 # 3. Comenzamos la transcripción:
-Start-transcriptionc:\scripts\transcripciones\transcrip.txt -append
+Start-transcript transcripciones\transcrip.txt -append
 
 # 4. Escribimos las instrucciones que sean necesarias
 
 # 5. Terminamos la transcripción
-Stop-transcription
+Stop-transcript
 
 # Y ya tendremos en el fichero transcrip.txt lo que buscábamos
 ```
@@ -638,34 +639,35 @@ Stop-transcription
 * **Get-content**
   * Es el equivalente a **cat** o **type**
 ```powershell
-get-content D:\temp\test\test.txt | measure-object -character -line -word
+get-content historial.txt | measure-object -character -line -wordç
 ```
 
 * **Compare-object**
   * Compara dos objetos (ficheros, variables, etc..)
 ```
-Compare-Object -ReferenceObject$(Get-Content D:\temp\test\test.txt) -DifferenceObject$(Get-Content D:\temp\test\test1.txt)
-Compare-Object -ReferenceObject$(Get-Content D:\temp\test\test.txt) -DifferenceObject$(Get-Content D:\temp\test\test1.txt) -IncludeEqual
+# Cambiar algo de los ficheros para la prueba. 
+Compare-Object -ReferenceObject$(Get-Content historial.txt) -DifferenceObject$(Get-Content historial.txt)
+Compare-Object -ReferenceObject$(Get-Content historial.txt) -DifferenceObject$(Get-Content historial.txt) -IncludeEqual
 ```
 
 * **Format-List**
   * Formatea la salida como una lista de propiedades
 ```powershell
-$A = Get-ChildItemD:\temp\test\*.txt
+$A = Get-ChildItem \*.txt
 Format-List -InputObject$A
 Get-Service | Format-List
 ```
 
 * **Format-Wide**
   * Formatea la salida como una tabla
-```
-Format-Wide -InputObject$A
+```powershell
+Format-Wide -InputObject $A
 ```
 
 * **Where-object**
   * Filtra objetos a partir de los valores de alguna propiedad
 ```powershell
-Get-Process | Where-Object ProcessName-Match "^p.*"
+Get-Process | Where-Object ProcessName -Match "^p.*"
 ```
 
 * **For Each-Object**
@@ -686,7 +688,7 @@ Start-Sleep -s 15
 * **Read-Host**
   * Sirve para pedir entrada de usuario por teclado:
 ```powershell
-$choice = Read-Host “Elijaunaopción"
+$choice = Read-Host “Elija una opción"
 ```
 
 * **Write-Host**
@@ -798,14 +800,14 @@ $servers -join','
 
 ```powershell
 $folder = 'Temp'
-Join-Path -Path 'c:\windows' -ChildPath$folder
+Join-Path -Path 'c:\windows' -ChildPath $folder
 ```
 
 * **StringBuilder**
   * Sirve muy bien para crear cadenas de gran tamaño a partir de muchas cadenas más pequeñas. La razón es que solo recopila todas las cadenas que le agrega y solo concatena todas al final cuando recupera el valor.
 
 ```powershell
-$stringBuilder= New-Object-TypeName"System.Text.StringBuilder"
+$stringBuilder= New-Object -TypeName "System.Text.StringBuilder"
 [void]$stringBuilder.Append("Numbers: ")
 foreach($number in 1..10000){
     [void]$stringBuilder.Append(" $number")
@@ -816,8 +818,8 @@ $message= $stringBuilder.ToString()
 * Reemplazar tokens
   * Podemos tener una forma sencilla:
 ```powershell
-$letter= Get-Content -PathTemplateLetter.txt -RAW
-$letter= $letter-replace'#FULL_NAME#', 'Kevin Marquette’
+$letter= Get-Content -Path historial.txt -RAW
+$letter= $letter-replace' #FULL_NAME#', 'Kevin Marquette’
 ```
 
 * Pero también podemos usar una forma más sofisticada con una hash table:
@@ -827,13 +829,17 @@ $tokenList= @{
   Location= 'Orange County'
   State= 'CA'
 }
-$letter= Get-Content -PathTemplateLetter.txt -RAW
+$letter= Get-Content -Path historial.txt -RAW
 foreach( $token in $tokenList.GetEnumerator() )
 {
   $pattern= '#{0}#' -f $token.key
   $letter= $letter-replace$pattern, $token.Value
 }
 ```
+
+## Ejercicios - Hands On 
+
+[Comandos más usados](https://docs.google.com/document/d/1NrQLNKoPtxWExyVrJT_hi3Z9iuAYnh-o-W-bw_nwKXA/edit?usp=share_link)
 
 ## Administración de Windows con PowerShell
 
@@ -847,62 +853,58 @@ foreach( $token in $tokenList.GetEnumerator() )
 
 * Información sobre la BIOS
 ```powershell
-Get-CimInstance-ClassNameWin32_BIOS
+Get-CimInstance -ClassName Win32_BIOS
 ```
 * Información del procesador
 ```powershell
-Get-CimInstance-ClassNameWin32_Processor | Select-Object -ExcludeProperty"CIM*"
+Get-CimInstance -ClassName Win32_Processor | Select-Object -ExcludeProperty"CIM*"
 ```
 * Información sobre actualizaciones instaladas
 ```powershell
-Get-CimInstance-ClassNameWin32_QuickFixEngineering
+Get-CimInstance -ClassName Win32_QuickFixEngineering
 ```
 * Información sobre el sistema operativo
 ```powershell
-Get-CimInstance-ClassNameWin32_OperatingSystem
+Get-CimInstance -ClassName Win32_OperatingSystem
 ```
 
 ### Recopilación sobre el equipo
 
 * Sobre el propietario y el usuario actuales
 ````powershell
-Get-CimInstance -ClassName Win32_OperatingSystem | Select-Object-Property NumberOfLicensedUsers,NumberOfUsers,RegisteredUser
+Get-CimInstance -ClassName Win32_OperatingSystem | Select-Object -Property NumberOfLicensedUsers,NumberOfUsers,RegisteredUser
 ````
 * Espacio disponible en disco
 ````powershell
-Get-CimInstance-ClassNameWin32_LogicalDisk -Filter "DriveType=3"
+Get-CimInstance -ClassName Win32_LogicalDisk -Filter "DriveType=3"
 ````
 * Si hay varias unidades, podemos sumarlas
 ````powershell
-Get-CimInstance-ClassNameWin32_LogicalDisk -Filter "DriveType=3" | Measure-Object -Property FreeSpace,Size-Sum | Select-Object -Property Property,Sum
+Get-CimInstance -ClassName Win32_LogicalDisk -Filter "DriveType=3" | Measure-Object -Property FreeSpace,Size -Sum | Select-Object -Property Property,Sum
 ````
 * Información sobre el inicio de sesión
 ````powershell
-Get-CimInstance-ClassNameWin32_LogonSession
+Get-CimInstance -ClassName Win32_LogonSession
 ````
 * Hora local del sistema
 ````powershell
-Get-CimInstance-ClassNameWin32_LocalTime
+Get-CimInstance -ClassName Win32_LocalTime
 ````
 * Estado de los servicios
 ````powershell
-Get-CimInstance-ClassNameWin32_Service | Format-Table -Property Status,Name,DisplayName-AutoSize-Wrap
+Get-CimInstance -ClassName Win32_Service | Format-Table -Property Status,Name,DisplayName -AutoSize -Wrap
 ````
 
 ### Recopilar información sobre Procesos 
 
 * Obtener el proceso por id:
 ```powershell
-Get-Process-id 0
+Get-Process -id 0
 ```
 * Obtener proceso por nombre:
 ````powershell
 Get-Process -Name exp*,power*
 ````
-* De equipos remotos:
-```powershell
-Get-Process -Name PowerShell -ComputerName localhost, Server01, Server02
-```
 
 ### Detener procesos
 

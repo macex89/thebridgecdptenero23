@@ -82,7 +82,7 @@ $Lista.Length
 
 * La forma de recorrer los elementos de una matriz puede ser esta:
 ```powershell
-foreach($item in $array){
+foreach($item in $lista){
     Write-Output $item
 }
 ```
@@ -107,12 +107,6 @@ $ageList.add( 'Alex', 9 )
 ```powershell
 $ageList['Kevin']
 $ageList['Alex’]
-
-# Ejemplo
-$key = 'Kevin'
-$value = 36
-$ageList.add( $key, $value )
-$ageList.add( 'Alex', 9 )
 ```
 
 * Creación con valores 
@@ -175,7 +169,7 @@ $person.city = 'Austin'
 $person.state = 'TX’
 
 # Para borrar una clave
-$person.remove('age’)
+$person.remove('city’)
 
 # Aunque si queremos borrar la tabla entera
 $person.clear()

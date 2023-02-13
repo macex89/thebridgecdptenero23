@@ -169,6 +169,8 @@ $environments.Keys.Clone() | ForEach-Object {
 
 * Se puede acceder a los valores de una tabla hash de esta otra forma:
 ```powershell
+$person = @{}
+
 $person.city = 'Austin'
 $person.state = 'TX’
 
@@ -195,6 +197,8 @@ Add-DhcpServerv4Scope @DHCPScope
 
 ### Condicionales
 
+[Documentacion Oficial](https://learn.microsoft.com/es-es/powershell/scripting/learn/deep-dives/everything-about-if?view=powershell-5.1)
+
 * La sintaxis es la siguiente.
 ```powershell
 $condition = $true
@@ -203,7 +207,7 @@ if ( $condition ) {
 }
 ```
 
-* Con If vamosa poderutilizaroperadorescomo-eq, no funciona==:
+* Con If vamosa poder utilizar operadores como-eq, no funciona==:
 ```powershell
 $value = Get-MysteryValue
 if ( 5 -eq $value ) {
@@ -359,13 +363,10 @@ if ( 3 -in $array )
 
 ### ForEach-Object
 
-* Es un cmdletpara iterar los elementos de una canalización
+* Es un cmdlet para iterar los elementos de una canalización
 
 ````powershell
-'ActiveDirectory', 'SQLServer' |
-    ForEach-Object{Get-Command-Module $_} |
-        Group-Object-PropertyModuleName-NoElement|
-            Sort-Object-PropertyCount-Descending
+30000, 56798, 12432 | ForEach-Object -Process {$_/1024}
 ````
 
 * Cuando usemos listas o variables, etc
@@ -373,7 +374,7 @@ if ( 3 -in $array )
 ```powershell
 $ComputerName= 'DC01', 'WEB01'
 foreach($Computer in $ComputerName) {
-    Get-ADComputer-Identity$Computer
+    echo $Computer 
 }
 ```
 
@@ -383,8 +384,8 @@ foreach($Computer in $ComputerName) {
 
 ```powershell
 for($i = 1; $i -lt5; $i++) {
-    Write-Output "Sleeping for$i seconds"
-    Start-Sleep-Seconds$i
+    Write-Output "Sleeping for $i seconds"
+    Start-Sleep -Seconds $i
 }
 ```
 
@@ -436,7 +437,7 @@ Write-Output $date
 Permite salir de un buble For couando se quiera:
 ```powershell
 for ($i= 1; $i-lt5; $i++) {
-  Write-Output "Sleeping for $iseconds"
+  Write-Output "Sleeping for $i seconds"
   Start-Sleep -Seconds $i
   break
 }

@@ -387,7 +387,7 @@ Un bucle que al menos hará una vez las instrucciones hasta que se cumpla la con
 ```powershell
 $number = Get-Random -Minimum 1 -Maximum 10
 do {
-    $guess = Read-Host  “Adivin a el número?"
+    $guess = Read-Host  “Adivina a el número?"
     $guess = [int]$guess
     if ($guess -lt $number) {
         Write-Output 'Muy bajo!'

@@ -183,7 +183,7 @@ $DHCPScope= @{
   EndRange= '10.0.0.254'
   SubnetMask= '255.255.255.0'
   Description= 'Network fortestlabA'
-  LeaseDuration= (New-TimeSpan-Days8)
+  LeaseDuration= (New-TimeSpan -Days 8)
   Type= "Both"
 }
 Add-DhcpServerv4Scope @DHCPScope

@@ -372,10 +372,10 @@ foreach($Computer in $ComputerName) {
 
 ### For
 
-* Un bucle for itera si una condición especificada es tru:
+* Un bucle for itera si una condición especificada es true:
 
 ```powershell
-for($i = 1; $i -lt5; $i++) {
+for($i = 1; $i -lt 5; $i++) {
     Write-Output "Sleeping for $i seconds"
     Start-Sleep -Seconds $i
 }
@@ -387,12 +387,13 @@ Un bucle que al menos hará una vez las instrucciones hasta que se cumpla la con
 ```powershell
 $number = Get-Random -Minimum 1 -Maximum 10
 do {
-    $guess = Read-Host -Prompt “Adivinaelnúmero?"
-    if ($guess -lt$number) {
-        Write-Output ‘Muybajo!'
+    $guess = Read-Host  “Adivin a el número?"
+    $guess = [int]$guess
+    if ($guess -lt $number) {
+        Write-Output 'Muy bajo!'
     }
-    elseif ($guess -gt$number) {
-        Write-Output ‘Muyalto!'
+    elseif ($guess -gt $number) {
+        Write-Output 'Muy alto!'
     }
 }
 until ($guess -eq $number)
@@ -405,9 +406,9 @@ Un bucle que al menos hará una vez las instrucciones, mientras se cumpla la con
 ```powershell
 do {
   $guess = Read-Host -Prompt “Adivinaelnúmero?"
-  if ($guess -lt$number) {
+  if ($guess -lt $number) {
     Write-Output ‘Muybajo!'
-  } elseif ($guess -gt$number) {
+  } elseif ($guess -gt $number) {
     Write-Output ‘Muyalto!'
   }
 }
@@ -419,7 +420,7 @@ Evalúa la condición en la parte superior del bucle antes de que se ejecute el 
 
 ```powershell
 $date = Get-Date -Date 'November 22'
-while ($date.DayOfWeek-ne 'Thursday') {
+while ($date.DayOfWeek -ne 'Thursday') {
     $date = $date.AddDays(1)
 }
 Write-Output $date
@@ -428,7 +429,7 @@ Write-Output $date
 ### Break
 Permite salir de un buble For couando se quiera:
 ```powershell
-for ($i= 1; $i-lt5; $i++) {
+for ($i= 1; $i -lt 5; $i++) {
   Write-Output "Sleeping for $i seconds"
   Start-Sleep -Seconds $i
   break
@@ -437,7 +438,8 @@ for ($i= 1; $i-lt5; $i++) {
 
 ### Continue
 ````powershell
-while ($i-lt5) {
+$i = 0
+while ($i -lt 5) {
   $i+= 1
   if ($i-eq 3) {
     continue

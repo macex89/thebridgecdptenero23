@@ -633,22 +633,22 @@ Stop-transcript
 * **Get-content**
   * Es el equivalente a **cat** o **type**
 ```powershell
-get-content historial.txt | measure-object -character -line -wordç
+get-content historial.txt | measure-object -character -line -word
 ```
 
 * **Compare-object**
   * Compara dos objetos (ficheros, variables, etc..)
 ```
 # Cambiar algo de los ficheros para la prueba. 
-Compare-Object -ReferenceObject$(Get-Content historial.txt) -DifferenceObject$(Get-Content historial.txt)
-Compare-Object -ReferenceObject$(Get-Content historial.txt) -DifferenceObject$(Get-Content historial.txt) -IncludeEqual
+Compare-Object -ReferenceObject $(Get-Content historial.txt) -DifferenceObject $(Get-Content historial2.txt)
+Compare-Object -ReferenceObject $(Get-Content historial.txt) -DifferenceObject $(Get-Content historial2.txt) -IncludeEqual
 ```
 
 * **Format-List**
   * Formatea la salida como una lista de propiedades
 ```powershell
-$A = Get-ChildItem \*.txt
-Format-List -InputObject$A
+$A = Get-ChildItem *.txt
+Format-List -InputObject $A
 Get-Service | Format-List
 ```
 
@@ -947,8 +947,6 @@ Get-ChildItem-Path C:\-Force -Recurse
 Get-ChildItem-Path $env:ProgramFiles-Recurse -Include *.exe | Where-Object -FilterScript{($_.LastWriteTime-gt'2005-10-01') -and ($_.Length -ge1mb) -and ($_.Length -le 10mb)}
 ```
 
-### Trabajar con sistema de archivo
-
 * Copiar archivos
 ````powershell
 Copy-Item -Path C:\boot.ini -Destination C:\boot.bak
@@ -966,7 +964,7 @@ New-Item -Path 'C:\temp\New Folder\file.txt' -ItemType File
 ````powershell
 Remove-Item -Path C:\temp\DeleteMe
 ````
-* Quitartodoslosficherosde unacarpetasin confirmación
+* Quitar todos los ficheros de una carpeta sin confirmación
 ````powershell
 Remove-Item -Path C:\temp\DeleteMe -Recurse
 ````

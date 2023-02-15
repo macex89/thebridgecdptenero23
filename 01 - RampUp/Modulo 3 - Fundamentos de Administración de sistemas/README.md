@@ -6,7 +6,7 @@ El contenido será el siguiente:
 
 ## CMD
 
-La documentación de este módulo la veremos con un fichero [README](https://github.com/isotomor/thebridgecdptenero23/tree/main/01%20-%20RampUp/Modulo%203%20-%20Fundamentos%20de%20Administraci%C3%B3n%20de%20sistemas/CMD)
+La documentación de este módulo la veremos con un fichero [README](CMD)
 
 La lista de comandos más usados la podremos encontrar aquí: [Comandos más usados](https://docs.google.com/document/d/1i-Oe9JPwh-BpX7AJ5f6meB0WcXSrYMlb5NTFGgIG1Uw/edit?usp=share_link)
 
@@ -14,7 +14,7 @@ La lista de comandos más usados la podremos encontrar aquí: [Comandos más usa
 
 Aquí podéis encontrar la documentación oficial de PowerShell: [Documentación Oficial](https://learn.microsoft.com/es-es/powershell/scripting/learn/ps101/01-getting-started?view=powershell-5.1)
 
-La documentación de este módulo la veremos con un fichero [README](https://github.com/isotomor/thebridgecdptenero23/tree/main/01%20-%20RampUp/Modulo%203%20-%20Fundamentos%20de%20Administraci%C3%B3n%20de%20sistemas/Power%20Shell)
+La documentación de este módulo la veremos con un fichero [README](Power%20Shell)
 
 La lista de comandos más usados la podremos encontrar aquí: [Comandos más usados](https://docs.google.com/document/d/1NrQLNKoPtxWExyVrJT_hi3Z9iuAYnh-o-W-bw_nwKXA/edit?usp=share_link)
 
@@ -23,7 +23,7 @@ Libro con todo el contenido de powershell: [PowerShell Notes for professionals b
 
 ## Bash
 
-La documentación de este módulo la veremos con un fichero [README](https://github.com/isotomor/thebridgecdptenero23/tree/main/01%20-%20RampUp/Modulo%203%20-%20Fundamentos%20de%20Administraci%C3%B3n%20de%20sistemas/Bash)
+La documentación de este módulo la veremos con un fichero [README](Bash)
 
 - [Más comandos básicos](https://github.com/isotomor/thebridgecdptenero23/blob/main/01%20-%20RampUp/Modulo%203%20-%20Fundamentos%20de%20Administraci%C3%B3n%20de%20sistemas/Bash/Comandos%20basicos%20linux/M%C3%A1s%20comandos%20b%C3%A1sicos.pdf)
 - [Anexo Comandos Linux](https://github.com/isotomor/thebridgecdptenero23/blob/main/01%20-%20RampUp/Modulo%203%20-%20Fundamentos%20de%20Administraci%C3%B3n%20de%20sistemas/Bash/Comandos%20basicos%20linux/Anexo_Comandos_Linux.pdf)

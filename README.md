@@ -10,10 +10,10 @@ Repositorio donde estará subido todo el material empleado en el bootcamp de Dat
 
 El bootcamp se divide en los siguientes módulos:k
 
-* [RampUp](https://github.com/isotomor/thebridgecdptenero23/tree/main/01%20-%20RampUp)
-    - [Modulo 1 – Fundamentos de Hardware y Sistemas Operativos](https://github.com/isotomor/thebridgecdptenero23/tree/main/01%20-%20RampUp/Modulo%201%20-%20Fundamentos%20de%20Hardware%20y%20Sistemas%20Operativos)
-    - [Modulo 2 – Fundamentos de Redes y Comunicaciones](https://github.com/isotomor/thebridgecdptenero23/tree/main/01%20-%20RampUp/Modulo%202%20-%20Fundamentos%20de%20Redes%20y%20Comunicaciones)
-    - [Modulo 3 – Fundamentos de Administración de sistemas](https://github.com/isotomor/thebridgecdptenero23/tree/main/01%20-%20RampUp/Modulo%203%20-%20Fundamentos%20de%20Administraci%C3%B3n%20de%20sistemas)
+* [Ramp Up](01%20-%20RampUp)
+    - [Modulo 1 – Fundamentos de Hardware y Sistemas Operativos](01%20-%20RampUp/Modulo%201%20-%20Fundamentos%20de%20Hardware%20y%20Sistemas%20Operativos)
+    - [Modulo 2 – Fundamentos de Redes y Comunicaciones](01%20-%20RampUp/Modulo%202%20-%20Fundamentos%20de%20Redes%20y%20Comunicaciones)
+    - [Modulo 3 – Fundamentos de Administración de sistemas](01%20-%20RampUp/Modulo%203%20-%20Fundamentos%20de%20Administraci%C3%B3n%20de%20sistemas)
 * Despliegue de servicios en cloud
     - Módulo 1 - Concepto de la nube
     - Módulo 2 - Seguridad y Conformidadk

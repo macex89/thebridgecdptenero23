@@ -199,16 +199,13 @@ Además de los ficheros normales, Linux también utiliza archivos virtuales o **
 - **/dev**: Pseudo archivos representando dispositivos o controladores de dispositivos.
 - **/sys**: Es otro directorio para pseudo-archivos. Contine información sobre el sistema y las características de Linux.
   - Esta carpeta tiene una serie de ficheros
-- **block**: Contiene dispositivos de bloque adjuntos como discos duros y usb.
-  - dentro de /sys/block se encuentran entre otros sda, puede que también un sdb que será como llame a nuestros discos duros. En cada sda o sdb se encuentran las particiones de la unidad. ![](img/Admon SO Linux Parte 1 Instalaciones y primeros pasos_03.png)
-
-- **block**: Contiene dispositivos de bloque adjuntos como discos duros y usb.
-  - Si nos metemos en sda1, aparte de ver qué hay en ese disco.
-  - y hacemos **cat size**, obtendremos un valor de tamaño de sda.
-
-Comenzando con Linux
-
-### Configuración inicial de un Linux.**
+  - **block**: Contiene dispositivos de bloque adjuntos como discos duros y usb. 
+    - dentro de /sys/block se encuentran entre otros sda, puede que también un sdb que será como llame a nuestros discos duros. En cada sda o sdb se encuentran las particiones de la unidad. ![](img/Admon SO Linux Parte 1 Instalaciones y primeros pasos_03.png)
+  - **block**: Contiene dispositivos de bloque adjuntos como discos duros y usb.
+    - Si nos metemos en sda1, aparte de ver qué hay en ese disco.
+    - y hacemos **cat size**, obtendremos un valor de tamaño de sda.
+    
+### Configuración inicial de un Linux.
 
 Podemos cambiar nuestro valor de país y ciudad utilizando **locale**: ***locale***
 La configuración real se encuentra en el directorio:

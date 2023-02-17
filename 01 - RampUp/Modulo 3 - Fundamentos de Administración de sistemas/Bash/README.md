@@ -522,7 +522,7 @@ Por lo demás,
   - Poner **../directorio1**, provoca que estemos haciendo referencia al padre de **directorio1.** También si escribimos **cd ..** subirá hasta el padre del directorio en el que nos encontremos.
   - Poner **un único punto con su espacio antes**, indica que queremos referenciar a la carpeta actual en la que nos encontramos, pero si vemos este ejemplo tendremos la respuesta:
 ````bash
-**mv ../fichero\* .**
+mv ../fichero/* .
 ````
 
 Cuando utilicemos funciones de borrado como **rm** \* o **rmdir**, o **rm -rf**, hay que tener cuidado porque no hay una papelera de reciclaje de donde podamos deshacer la operación. Bash no la tiene. 
@@ -1199,6 +1199,8 @@ sudo useradd -s /bin/bash -d /home/pepe/ -m -G sudo pepe
 sudo passwd pepe
 
 ````
+
+> Si no recuerdas la contraseña se puede cambiar en CMD. **wsl -u root** y **passwd username**
 
 - **-s /bin/bash** - Setea en /bin/bash un login para la nueva cuenta. 
 - **-d /home/pepe** - Setea en /home/vivek/ como home directory de la nueva cuenta. 

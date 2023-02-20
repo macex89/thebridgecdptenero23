@@ -751,16 +751,16 @@ Entrada de texto:
 
 ````bash
 #!/bin/bash
-declare -inumber1
-declare -inumber2
-declare -itotal
+declare -i number1
+declare -i number2
+declare -i total
 echo "¿Cuales tu número favorito?"
   read number1
 echo "¿Qué numero odias?"
   read number2
   
 total=$number1*$number2
-echo "Son iguala" $total
+echo "Son igual a" $total
 
 exit 0
 ````
@@ -788,7 +788,7 @@ declare -r constante="valor fijo de la constante"
 
 - También podemos declarar arrays con **-a**
 ````bash
-declare -a usuarios=([0]='juan' [1]='pepe' [2]='ana' [3]='eugenia’)
+declare -a usuarios=([0]='juan' [1]='pepe' [2]='ana' [3]='eugenia')
 ````
 
 
@@ -803,16 +803,16 @@ Estas opciones también las podemos consultar en la documentación de declare:
 ````bash
 
 #!/bin/bash
-for iin {0..10..2}
+for i in {0..10..2}
   do
-    echo "Atravesamos$iveces"
+    echo "Atravesamos $i veces"
   done
 ##################################
 
 #!/bin/bash
 for filename in file1 file2 file3
   do
-    echo "Importantefichero" >> $filename
+    echo "Importante fichero" >> $filename
   done
 ````
 
@@ -827,10 +827,10 @@ for filename in file1 file2 file3
 
 #!/bin/bash
 echo "¿Cual es tu color favorito?"
-readtext1
+read text1
 echo "¿Qué color le gusta a tu amigo?"
-readtext2
-  if test $text1 != $text2; then
+read text2
+  if [ $text1 != $text2 ]; then
     echo "Los opuestosse atraen."
   else
     echo "Tal para cual!"
@@ -845,12 +845,12 @@ exit 0
 
 ### While
 
-```
+```bash
 #!/bin/bash
 declare -icounter
 counter=10
-  while [ $counter -gt2 ]; do
-    echo El Contador marca$counter
+  while [ $counter -gt 2 ]; do
+    echo El Contador marca $counter
     counter=counter-1
   done
 exit 0
@@ -876,7 +876,7 @@ Este ejemplo muestra cómo usar parámetros.
 - **$1..$n** los distintos parámetros introducidos en echo "Todos los parametros menos el 0": $\*; orden
 - **$#** el número de parámetros
 - **$?** valor devuelto de la última orden ejecutada
-- **$\*** todos menos el nombre del script.
+- $\* todos menos el nombre del script.
 - **$!** pid del último proceso ejecutado.en back
 - **$$** tendría el Id de proceso
 

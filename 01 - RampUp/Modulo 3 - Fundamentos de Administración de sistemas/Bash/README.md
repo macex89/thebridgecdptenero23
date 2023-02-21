@@ -124,7 +124,7 @@ Lo primero es entender como inicia un S.O Linux
   - **Ctrl + Alt + T**
 - También podemos añadir el terminal a la barra de favoritos. Para ello, primero en el cuadro de puntos, buscaremos el terminal y con botón derecho elegiremos Añadir a Favoritos
 
-![](img/Admon SO Linux Parte 1 Instalaciones y primeros pasos_01.png)
+![](img/Parte_1_Instalaciones_y_primeros_pasos_01.png)
 
 - En Linux, podemos acceder a todo a través de su sistema de archivos.
 - Por ejemplo, si accedemos a la carpeta /boot
@@ -143,7 +143,7 @@ La carpeta grub, contiene los archivos utilizados por el cargador de arranque GR
 
 En Linux podemos decir que existen unos “Niveles de ejecución” que son simplemente números que le dicen a Linux cómo debería estar funcionando el sistema operativo:
 
-![](img/Admon SO Linux Parte 1 Instalaciones y primeros pasos_02.png)
+![](img/Parte_1_Instalaciones_y_primeros_pasos_02.png)
 
 Esta lista puede cambiar entre las versiones de Linux que usemos
 
@@ -200,7 +200,7 @@ Además de los ficheros normales, Linux también utiliza archivos virtuales o **
 - **/sys**: Es otro directorio para pseudo-archivos. Contine información sobre el sistema y las características de Linux.
   - Esta carpeta tiene una serie de ficheros
   - **block**: Contiene dispositivos de bloque adjuntos como discos duros y usb. 
-    - dentro de /sys/block se encuentran entre otros sda, puede que también un sdb que será como llame a nuestros discos duros. En cada sda o sdb se encuentran las particiones de la unidad. ![](img/Admon SO Linux Parte 1 Instalaciones y primeros pasos_03.png)
+    - dentro de /sys/block se encuentran entre otros sda, puede que también un sdb que será como llame a nuestros discos duros. En cada sda o sdb se encuentran las particiones de la unidad. ![](img/Parte_1_Instalaciones_y_primeros_pasos_03.png)
   - **block**: Contiene dispositivos de bloque adjuntos como discos duros y usb.
     - Si nos metemos en sda1, aparte de ver qué hay en ese disco.
     - y hacemos **cat size**, obtendremos un valor de tamaño de sda.
@@ -334,7 +334,7 @@ Este comando en CentOS hay que instalarlo con ***yum install lshw***
 
 Ya hemos visto cómo instalar algo con CentOS, pero esto cambia según la distribución
 
-![](img/Admon SO Linux Parte 1 Instalaciones y primeros pasos_04.png)
+![](img/Parte_1_Instalaciones_y_primeros_pasos_04.png)
 
 **Instalación desde el Desktop**
 
@@ -478,7 +478,7 @@ less /etc/profile
 
 ### Asignaciones internas.
 
-![](img/Admon SO Linux Parte 2 Mas sobre comandos y scripting_06.png)
+![](img/Parte 2_Mas_sobre_comandos_y_scripting_06.png)
 
 En el fichero /etc/passwd tenemos una serie de datos asignados para la sesión: 
 
@@ -625,7 +625,7 @@ zip otrofichero.zip \*
 
 En el reconocimiento de problemas en los periféricos hay dos pasos:
 
-![](img/Admon SO Linux Parte 2 Mas sobre comandos y scripting_01.png)
+![](img/Parte 2_Mas_sobre_comandos_y_scripting_01.png)
 
 Para el paso 1
 
@@ -669,7 +669,7 @@ Linux se creó pensando ya en la conectividad, por eso sacó ventaja rápidament
 
 Para poder conectarse a una red, un dispositivo debe ser identificable por una dirección IP única. Ya vimos en la parte de redes cómo funciona el redireccionamiento.
 
-![](img/Admon SO Linux Parte 2 Mas sobre comandos y scripting_03.png)
+![](img/Parte 2_Mas_sobre_comandos_y_scripting_03.png)
 
 Pero cómo poder trabajar con Linux para conocer información sobre la conectividad del sistema. El primer paso es ver si tiene acceso a un enrutador de red de un tipo u otro.
 
@@ -677,7 +677,7 @@ Pero cómo poder trabajar con Linux para conocer información sobre la conectivi
 ip route show
 ````
 
-![](img/Admon SO Linux Parte 2 Mas sobre comandos y scripting_02.png)
+![](img/Parte 2_Mas_sobre_comandos_y_scripting_02.png)
 
 
 Esto nos está diciendo que nuestra ruta predeterminada de la red es doble, una que va a 10.0.2.2 y luego la 192.168.0.1. Esto cuadra con las dos redes que incluimos a la hora de definir esta máquina virtual, la NAT y la interna. La NAT es el dispositivo **enp0s3** y  la interna en el dispositivo **enp0s8**
@@ -792,9 +792,9 @@ declare -a usuarios=([0]='juan' [1]='pepe' [2]='ana' [3]='eugenia')
 ````
 
 
-![](img/Admon SO Linux Parte 2 Mas sobre comandos y scripting_04.png)
+![](img/Parte 2_Mas_sobre_comandos_y_scripting_04.png)
 
-![](img/Admon SO Linux Parte 2 Mas sobre comandos y scripting_05.png)
+![](img/Parte 2_Mas_sobre_comandos_y_scripting_05.png)
 
 Estas opciones también las podemos consultar en la documentación de declare:
 **help declare**
@@ -926,7 +926,7 @@ Para ello, vamos a utilizar una serie de herramientas que permiten obtener métr
 
 - Esos datos recopilados son enviados al terminal. Pero existen aplicaciones que nos ayudan a visualizar mejor tendencias, problemas:
 
-![](img/Admon SO Linux Parte 3 Administración de sistemas Linux_01.png)
+![](img/Parte_3_Administración_de_sistemas_Linux_01.png)
 
 
 En esta primera parte veremos los comandos a utilizar para exponer esos datos en terminal. 
@@ -1050,13 +1050,13 @@ yes > /dev/null &
 
 Hemos colocado el & al final para que el proceso se quede en background. El comando yes, manda caracteres y si miramos los procesos con **ps**, obtenemos:
 
-![](img/Admon SO Linux Parte 3 Administración de sistemas Linux_02.png) 
+![](img/Parte_3_Administración_de_sistemas_Linux_02.png) 
 
 Con dicha información, si queremos acabar con el proceso, basta con teclear kill y el número de proceso que aparece:
   - ***kill 119608*** # Poner aquí el id del proceso correspondiente.
   - Al hacer de nuevo ps
 
-![](img/Admon SO Linux Parte 3 Administración de sistemas Linux_03.png)
+![](img/Parte_3_Administración_de_sistemas_Linux_03.png)
 
 
 Existe otra forma de hacer lo mismo y que tal vez sea más eficaz 
@@ -1135,7 +1135,7 @@ Por ejemplo, vamos a abrir dos pestañas con el botón que se encuentra en la pa
 ````bash
 yes > /dev/null &
 ````
-![](img/Admon SO Linux Parte 3 Administración de sistemas Linux_04.png)
+![](img/Parte_3_Administración_de_sistemas_Linux_04.png)
 
 - Vemos que su valor NI es 0, que es el valor por defecto, ni mucha ni poca  prioridad. 
 - Ahora volvemos a la primera pestaña  y ejecutaremos: 
@@ -1272,14 +1272,14 @@ En Linux, cada objeto, ya sea un archivo o directorio tiene asociados unos metad
 
 Estos metadatos se muestran cuando realizamos ls -l (forma larga)
 
-![](img/Admon SO Linux Parte 3 Administración de sistemas Linux_05.png)
+![](img/Parte_3_Administración_de_sistemas_Linux_05.png)
 
 La aparición de un guión (fichero) o de una letra d (directorio) al principio de la definición  de los permisos es importante.
 
 - El fichero **data.txt** tiene como propietario a Jane.
 - Sin embargo, el **directorio** ha sido creado por root (ya que se usó sudo) pero el grupo es grupo\_secreto.
 
-![](img/Admon SO Linux Parte 3 Administración de sistemas Linux_06.png)
+![](img/Parte_3_Administración_de_sistemas_Linux_06.png)
 
 - Si quisiéramos que el propietario no fuera root, sino usuario, tendríamos que utilizar chown:
   - ***sudo chown usuario:secret\_group /var/secret***
@@ -1293,7 +1293,7 @@ usuario y ver los permisos con el usuario principal.
 
 Los permisos se agrupan de la siguiente manera: La primera letra que dice si es un directorio, un fichero o un enlace. A continuación 3 grupos de tres letras. Primero los permisos de **propietario**, el segundo de **grupo del propietario** y el tercero de **otros usuarios y grupos** 
 
-![](img/Admon SO Linux Parte 3 Administración de sistemas Linux_07.png)
+![](img/Parte_3_Administración_de_sistemas_Linux_07.png)
 
 Chmod es el comando que nos permite cambiar los permisos de un directorio o de un fichero: Se pueden usar combinaciones de letras o números
 
@@ -1331,7 +1331,7 @@ El número de 0 al 7 se puede deducir de la tabla siguiente.
  - Se activa sobre ficheros y significa que el que lo ejecute va a tener los mismos permisos que el que creó el archivo. Hay que utilizarlo con cuidado.
  - En los metadata aparece como una s
 
-![](img/Admon SO Linux Parte 3 Administración de sistemas Linux_08.png)
+![](img/Parte_3_Administración_de_sistemas_Linux_08.png)
 
 **SGID**
   - Es lo mismo que SUID pero a nivel de grupo. Es decir que todo archivo que tenga activo el SGID, al ser ejecutado, tendrá los privilegios del grupo al que pertenece.
@@ -1366,7 +1366,7 @@ sudo ln -s /home/usuario/miscript.sh /var/secretos
 ````
 - Y ahora aparecería el enlace
 
-![](img/Admon SO Linux Parte 3 Administración de sistemas Linux_09.png)
+![](img/Parte_3_Administración_de_sistemas_Linux_09.png)
 
 ### Hardening de servidores
 
@@ -1409,11 +1409,11 @@ Permiten que se pueda utilizar una sola dirección IP para múltiples servicios
 Así por ejemplo, dependiendo de qué puerto elijamos (hay algunos asignados por convención) podemos acceder a distintos 
 servicios de mi servidor aunque éste tenga una IP muy determinada.
 
-![](img/Admon SO Linux Parte 3 Administración de sistemas Linux_10.png) 
+![](img/Parte_3_Administración_de_sistemas_Linux_10.png) 
 
 Pero al igual que nosotros podemos indicar el puerto, también lo pueden indicar aquellos que se acercan a nuestro servidor con mala fe. ¿Cómo podemos evitarlo?
 
-![](img/Admon SO Linux Parte 3 Administración de sistemas Linux_11.png)
+![](img/Parte_3_Administración_de_sistemas_Linux_11.png)
 
 
 - **Service Hardening:**
@@ -1428,7 +1428,7 @@ Pero al igual que nosotros podemos indicar el puerto, también lo pueden indicar
   - Un firewall bien diseñado, ya sea físico como un Cisco o un Juniper, o bien un software open source como **iptables** que se puede ejecutar en un ordenador normal. 
   - Su misión es bloquear paquetes basándose en unas reglas que define el administrador, como por ejemplo orígenes no deseados, o por número de puerto asociado.
 
-![](img/Admon SO Linux Parte 3 Administración de sistemas Linux_14.png)
+![](img/Parte_3_Administración_de_sistemas_Linux_14.png)
 
 Vamos a comenzar, utilizando una herramienta que nos diga quien escucha sobre qué puertos para que se pueda apagar si no me conviene: nmap
 Esta herramienta es compleja y poderosa, bien usada es de gran ayuda, mal usada es un arma para descubrir lugares vulnerables y aprovecharlos.
@@ -1441,7 +1441,7 @@ nmap -v -sT localhost
 
 Nos permite localizar los puertos abiertos y por qué servicio.
 
-![](img/Admon SO Linux Parte 3 Administración de sistemas Linux_12.png)
+![](img/Parte_3_Administración_de_sistemas_Linux_12.png)
 
 Si ahora no quisiéramos que se aceptaran solicitudes por el puerto 80 ejecutaríamos una vieja conocida:
 
@@ -1537,7 +1537,7 @@ Y si lo que queremos es eliminar todas las reglas de un plumazo para comenzar de
 
 Encriptar sirve para proteger nuestra información de “miradas indiscretas”
 
-![](img/Admon SO Linux Parte 3 Administración de sistemas Linux_13.png)
+![](img/Parte_3_Administración_de_sistemas_Linux_13.png)
 
 Los usuarios que sí puedan acceder a esa información pueden disponer de varios métodos:
   - Par de claves

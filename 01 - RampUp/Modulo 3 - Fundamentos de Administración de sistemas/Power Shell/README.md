@@ -1,7 +1,9 @@
+![](../../../img/TheBridge_logo.png)
+
 # Power Shell
 ***
 
-![](../../../img/TheBridge_logo.png)
+![img_1.png](img/Power_shell_logo.png)
 
 
 **PowerShell** es un programa de **administración de configuración** y **automatización de tareas** de Microsoft, que consiste en un shell de línea de comandos y el lenguaje de secuencias de comandos asociado.

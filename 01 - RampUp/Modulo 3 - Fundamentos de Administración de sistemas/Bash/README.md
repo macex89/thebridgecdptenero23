@@ -1,7 +1,9 @@
-﻿# Bash - Instalaciones y primeros pasos
+﻿![](../../../img/TheBridge_logo.png)
+
+# Bash - Instalaciones y primeros pasos
 ***
 
-![](../../../img/TheBridge_logo.png)
+![](img/bash_sofware.png)
 
 
 ## Eso del código abierto
@@ -200,7 +202,10 @@ Además de los ficheros normales, Linux también utiliza archivos virtuales o **
 - **/sys**: Es otro directorio para pseudo-archivos. Contine información sobre el sistema y las características de Linux.
   - Esta carpeta tiene una serie de ficheros
   - **block**: Contiene dispositivos de bloque adjuntos como discos duros y usb. 
-    - dentro de /sys/block se encuentran entre otros sda, puede que también un sdb que será como llame a nuestros discos duros. En cada sda o sdb se encuentran las particiones de la unidad. ![](img/Parte_1_Instalaciones_y_primeros_pasos_03.png)
+    - dentro de /sys/block se encuentran entre otros sda, puede que también un sdb que será como llame a nuestros discos duros. En cada sda o sdb se encuentran las particiones de la unidad. 
+
+![](img/Parte_1_Instalaciones_y_primeros_pasos_03.png)
+
   - **block**: Contiene dispositivos de bloque adjuntos como discos duros y usb.
     - Si nos metemos en sda1, aparte de ver qué hay en ese disco.
     - y hacemos **cat size**, obtendremos un valor de tamaño de sda.
@@ -478,7 +483,7 @@ less /etc/profile
 
 ### Asignaciones internas.
 
-![](img/Parte 2_Mas_sobre_comandos_y_scripting_06.png)
+![](img/Parte_2_Mas_sobre_comandos_y_scripting_06.png)
 
 En el fichero /etc/passwd tenemos una serie de datos asignados para la sesión: 
 
@@ -625,7 +630,7 @@ zip otrofichero.zip \*
 
 En el reconocimiento de problemas en los periféricos hay dos pasos:
 
-![](img/Parte 2_Mas_sobre_comandos_y_scripting_01.png)
+![](img/Parte_2_Mas_sobre_comandos_y_scripting_01.png)
 
 Para el paso 1
 
@@ -669,7 +674,7 @@ Linux se creó pensando ya en la conectividad, por eso sacó ventaja rápidament
 
 Para poder conectarse a una red, un dispositivo debe ser identificable por una dirección IP única. Ya vimos en la parte de redes cómo funciona el redireccionamiento.
 
-![](img/Parte 2_Mas_sobre_comandos_y_scripting_03.png)
+![](img/Parte_2_Mas_sobre_comandos_y_scripting_03.png)
 
 Pero cómo poder trabajar con Linux para conocer información sobre la conectividad del sistema. El primer paso es ver si tiene acceso a un enrutador de red de un tipo u otro.
 
@@ -677,7 +682,7 @@ Pero cómo poder trabajar con Linux para conocer información sobre la conectivi
 ip route show
 ````
 
-![](img/Parte 2_Mas_sobre_comandos_y_scripting_02.png)
+![](img/Parte_2_Mas_sobre_comandos_y_scripting_02.png)
 
 
 Esto nos está diciendo que nuestra ruta predeterminada de la red es doble, una que va a 10.0.2.2 y luego la 192.168.0.1. Esto cuadra con las dos redes que incluimos a la hora de definir esta máquina virtual, la NAT y la interna. La NAT es el dispositivo **enp0s3** y  la interna en el dispositivo **enp0s8**
@@ -792,9 +797,9 @@ declare -a usuarios=([0]='juan' [1]='pepe' [2]='ana' [3]='eugenia')
 ````
 
 
-![](img/Parte 2_Mas_sobre_comandos_y_scripting_04.png)
+![](img/Parte_2_Mas_sobre_comandos_y_scripting_04.png)
 
-![](img/Parte 2_Mas_sobre_comandos_y_scripting_05.png)
+![](img/Parte_2_Mas_sobre_comandos_y_scripting_05.png)
 
 Estas opciones también las podemos consultar en la documentación de declare:
 **help declare**

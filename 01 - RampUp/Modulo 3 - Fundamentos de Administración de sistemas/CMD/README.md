@@ -1,8 +1,9 @@
+![](../../../img/TheBridge_logo.png)
+
 # CMD
 ***
 
-![](../../../img/TheBridge_logo.png)
-
+![img.png](img/cmd.png)
 
 Windows Terminal 
 
